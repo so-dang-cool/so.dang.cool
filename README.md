@@ -1,4 +1,4 @@
-Random projects and thoughts of Justin "hiljusti" Hill. >> [permalink to this site](https://so.dang.cool) <<
+Random projects and thoughts of Justin "hiljusti" Hill. >> [permalink](https://so.dang.cool) <<
 
 ---
 
