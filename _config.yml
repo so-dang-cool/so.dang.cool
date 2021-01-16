@@ -16,7 +16,7 @@ url: 'https://hiljusti.github.io'
 
 header_pages:
   - index.md
-  - adventofcode-solutions.md
+  - adventofcode-solutions/index.md
 
 footer: 'Come now, let us reason together.'
 
