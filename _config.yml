@@ -1,3 +1,6 @@
+plugins:
+  - jekyll-redirect-from
+
 safe: false
 
 highlighter: rouge
@@ -13,7 +16,7 @@ url: 'https://hiljusti.github.io'
 
 header_pages:
   - index.md
-  - 'adventofcode-solutions'
+  - _subsites/adventofcode.md
 
 footer: 'Come now, let us reason together.'
 
