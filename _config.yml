@@ -6,8 +6,8 @@ remote_theme: b2a3e8/jekyll-theme-console
 
 style: dark
 
-title: "hiljusti's things and thinks"
-description: "hiljusti's things and thinks"
+title: 'things and thinks by hiljusti'
+description: 'things and thinks by hiljusti'
 baseurl: '/'
 url: 'https://hiljusti.github.io'
 
