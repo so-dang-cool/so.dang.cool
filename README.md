@@ -1,6 +1,4 @@
-Random projects and thoughts of Justin "hiljusti" Hill.
-
->> [permalink to this site](https://hiljusti.github.io) <<
+Random projects and thoughts of Justin "hiljusti" Hill. >> [permalink to this site](https://so.dang.cool) <<
 
 ---
 
@@ -12,7 +10,7 @@ The following are solutions to some online challenges. Sometimes challenges get 
 
 These are intended as a learning resource. Please don't cheat yourself out of learning. More sites and more languages to come.
 
-* [Advent of Code Solutions](/adventofcode-solutions)
+* [Advent of Code Solutions](https://hiljusti.github.io/adventofcode-solutions)
 * [Code Wars Solutions](https://github.com/hiljusti/codewars-solutions)
 * [Exercism Solutions](https://github.com/hiljusti/exercism-solutions)
 
