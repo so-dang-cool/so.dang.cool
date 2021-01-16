@@ -13,7 +13,7 @@ url: 'https://hiljusti.github.io'
 
 header_pages:
   - index.md
-  - "/adventofcode-solutions"
+  - 'adventofcode-solutions'
 
-footer: "Come now, let us reason together."
+footer: 'Come now, let us reason together.'
 
