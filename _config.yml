@@ -1,1 +1,19 @@
-theme: jekyll-theme-hacker
+safe: false
+
+highlighter: rouge
+
+remote_theme: b2a3e8/jekyll-theme-console
+
+style: dark
+
+title: "hiljusti's things and thinks"
+description: "hiljusti's things and thinks"
+baseurl: '/'
+url: 'https://hiljusti.github.io'
+
+header_pages:
+  - index.md
+  - resources.md
+
+footer: "Come now, let us reason together."
+
