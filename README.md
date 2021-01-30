@@ -2,8 +2,6 @@
 ░▀▀█░█░█░░░░█░█░█▀█░█░█░█░█░░░░█░░░█░█░█░█░█░░
 ░▀▀▀░▀▀▀░▀░░▀▀░░▀░▀░▀░▀░▀▀▀░▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀
 
----
-
 Random projects and thoughts of Justin "hiljusti" Hill. >> [permalink](https://so.dang.cool) <<
 
 ---
