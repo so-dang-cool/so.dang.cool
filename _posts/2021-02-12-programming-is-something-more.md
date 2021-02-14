@@ -1,3 +1,7 @@
+---
+tag: shower thoughts
+---
+
 Rasmus Lerdorf (the Danish-Canadian creator of the "unmentionable" PHP) once said "I don't
 really like programming. I built [PHP] to program less so that I could just reuse code."
 [1](http://www.itconversations.com/shows/detail58.html)
