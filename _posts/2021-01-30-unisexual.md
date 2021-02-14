@@ -1,5 +1,5 @@
 ---
-
+tag: shower thoughts
 ---
 
 This morning in the shower, I think I realized that I love my wife, I'm

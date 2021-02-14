@@ -1,3 +1,7 @@
+---
+tags: 'shower thoughts' 'about me'
+---
+
 I decided to start keeping a blog (diary? notes?) because I had this thought today:
 
 > Probably the greatest thoughts have been forgotten. No one bothered to write them down.
