@@ -12,11 +12,30 @@
 
     <style>
       body {
+        color: #ddd;
+        background-color: #333;
         max-width: 60em;
         margin: auto;
         padding: 5vw;
         font-family: 'Playfair Display', serif;
       }
+      @media (prefers-color-scheme: light) {
+        body {
+          color: #333;
+          background-color: #ddd;
+        }
+      }
+
+      a {
+        color: #dbc;
+      }
+      @media (prefers-color-scheme: light) {
+        a {
+          color: #534;
+        }
+      }
+      a:hover {}
+
       pre {
         font-family: 'Lucida Console', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
       }
