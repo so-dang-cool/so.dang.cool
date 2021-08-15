@@ -1,22 +1,5 @@
-plugins:
-  - jekyll-redirect-from
+theme: hitchens-theme
 
-safe: false
-
-highlighter: rouge
-
-remote_theme: b2a3e8/jekyll-theme-console
-
-style: dark
-
-title: 'things and thinks by hiljusti'
-description: 'things and thinks by hiljusti'
-baseurl: '/'
-url: 'https://hiljusti.github.io'
-
-header_pages:
-  - index.md
-  - adventofcode-solutions/index.md
-
-footer: 'Come now, let us reason together.'
+# Do not merge with any other defaults
+ignore_theme_config: true
 
