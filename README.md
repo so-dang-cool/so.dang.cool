@@ -4,4 +4,4 @@
     ░▀▀▀░▀▀▀░▀░░▀▀░░▀░▀░▀░▀░▀▀▀░▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀
 ](https://so.dang.cool)
 
-Random projects and thoughts of J.R. Hill.
+Website of J.R. Hill.
