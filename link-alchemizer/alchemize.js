@@ -1,4 +1,7 @@
 const main = () => {
+  // Register the alchemize behavior
+  document.querySelector('#alchemize').onclick = alchemize;
+
   // Register the adder behavior
   document.querySelector('.add_row').onclick = addRow;
 
