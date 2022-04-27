@@ -18,4 +18,6 @@ const addRow = () => {
   getUrlChunksTable().appendChild(tr);
 };
 
+document.querySelector('.add_row').onclick = addRow;
+
 addRow();
