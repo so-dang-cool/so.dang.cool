@@ -1,8 +1,9 @@
-#cool-container {
-    min-height: 20px;
+#url_chunks {
+    min-height: 24px;
+    min-width: 240px;
 }
 
-.adder, .remover {
+.add_row, .remove_row {
     margin:8px;
     padding:2px 3px 0px 3px;
     height:20px;
