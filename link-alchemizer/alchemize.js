@@ -11,7 +11,7 @@ const main = () => {
 
 const alchemize = () => {
   let combos = [... document.querySelectorAll('#url_chunks textarea')]
-    .map(ta => ta.value.split('\n'))
+    .map(textarea => textarea.value.split('\n'))
     .reduce((as, bs) => as.flatMap(a => bs.map(b => a + b)));
   
   console.error({combos});
@@ -33,7 +33,7 @@ const addRow = () => {
   tds[1].appendChild(removeDiv);
 
   tds.forEach(td => tr.appendChild(td));
-  document.querySelector('#url_chunks'.appendChild(tr);
+  document.querySelector('#url_chunks').appendChild(tr);
 };
 
 // Let's go now!
