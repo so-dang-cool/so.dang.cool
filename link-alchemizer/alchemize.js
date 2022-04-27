@@ -1,6 +1,6 @@
 const getUrlChunksTable = () => document.querySelector('#url_chunks');
 
-const removeRow => clickedButton => {
+const removeRow = clickedButton => {
   const td = clickedButton.parentElement;
   const tr = td.parentElement;
   tr.remove()
