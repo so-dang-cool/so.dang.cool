@@ -1,10 +1,12 @@
-const getUrlChunksTable = () => document.querySelector('#url_chunks');
+main();
 
-const removeRow = clickedButton => {
-  const td = clickedButton.parentElement;
-  const tr = td.parentElement;
-  tr.remove()
-};
+const main = () => {
+  // Register the adder behavior
+  document.querySelector('.add_row').onclick = addRow;
+  
+  // Add a single row
+  addRow();
+}
 
 const addRow = () => {
   const tr = document.createElement('tr');
@@ -16,7 +18,7 @@ const addRow = () => {
   
   removeDiv.className = 'remove_row';
   removeDiv.innerText = '-';
-  removeDiv.onlick = removeRow;
+  removeDiv.onlick = () => tr.remove();
   
   tds[0].appendChild(textarea);
   tds[1].appendChild(removeDiv);
@@ -25,6 +27,4 @@ const addRow = () => {
   getUrlChunksTable().appendChild(tr);
 };
 
-document.querySelector('.add_row').onclick = addRow;
-
-addRow();
+const getUrlChunksTable = () => document.querySelector('#url_chunks');
