@@ -1,0 +1,70 @@
+#cool-container {
+    min-height: 20px;
+}
+
+.adder, .remover {
+    margin:8px;
+    padding:2px 3px 0px 3px;
+    height:20px;
+    width:18px;
+    cursor:pointer;
+    text-align:center;
+    font-weight: bolder;
+    background-color:#636;
+    color:#fff;
+    border-radius:3px;
+    -moz-user-select:none;
+}
+
+.catchphrase {
+    font-size:smaller;
+    font-style:italic;
+    margin-top:-10px;
+}
+
+.halp {
+    margin-top: 30px;
+    font-size:smaller;
+    color:#669;
+}
+
+.halptext_not, .halpbox_not {
+    display:none;
+}
+
+.halp pre {
+    border: 1px solid black;
+    padding: 4px;
+    cursor:text;
+    width: 300px;
+}
+
+#halpshow {
+    cursor:pointer;
+}
+
+a {
+    text-decoration:none;
+    color:#669;
+}
+
+#logo {
+    float: left;
+    margin-right: 16px;
+}
+
+#load_limit {
+    width: 64px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+.light, .light > a {
+    text-align:center;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgba(31,0,63,0.2);
+}
