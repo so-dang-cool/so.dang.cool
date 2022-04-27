@@ -10,11 +10,10 @@ const main = () => {
 }
 
 const alchemize = () => {
-  let combos = [... document.querySelectorAll('#url_chunks textarea')]
+  [... document.querySelectorAll('#url_chunks textarea')]
     .map(textarea => textarea.value.split('\n'))
-    .reduce((as, bs) => as.flatMap(a => bs.map(b => a + b)));
-  
-  console.error({combos});
+    .reduce((as, bs) => as.flatMap(a => bs.map(b => a + b)))
+    .forEach(url => window.open(url));
 }
 
 const addRow = () => {
