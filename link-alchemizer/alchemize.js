@@ -4,6 +4,9 @@ const main = () => {
 
   // Register the adder behavior
   document.querySelector('.add_row').onclick = addRow;
+  
+  // Register halp msg show/hide behavior
+  document.querySelector('#halphide').onclick = showHideHalp;
 
   // Add a single row
   addRow();
@@ -34,6 +37,10 @@ const addRow = () => {
   tds.forEach(td => tr.appendChild(td));
   document.querySelector('#url_chunks').appendChild(tr);
 };
+
+const showHideHalp = () => {
+  document.querySelector('#halphide').toggleAttribute('hidden');
+}
 
 // Let's go now!
 main();
