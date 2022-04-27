@@ -23,7 +23,7 @@ const addRow = () => {
   tds.forEach(td => tr.appendChild(td));
   getUrlChunksTable().appendChild(tr);
 
-  removeDiv.onlick = () => tr.remove();
+  removeDiv.onclick = () => tr.remove();
 };
 
 const getUrlChunksTable = () => document.querySelector('#url_chunks');
