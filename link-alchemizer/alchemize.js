@@ -1,5 +1,3 @@
-main();
-
 const main = () => {
   // Register the adder behavior
   document.querySelector('.add_row').onclick = addRow;
@@ -28,3 +26,6 @@ const addRow = () => {
 };
 
 const getUrlChunksTable = () => document.querySelector('#url_chunks');
+
+// Let's go now!
+main();
