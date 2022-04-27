@@ -6,7 +6,7 @@ const main = () => {
   document.querySelector('.add_row').onclick = addRow;
   
   // Register halp msg show/hide behavior
-  document.querySelector('#halphide').onclick = showHideHalp;
+  document.querySelector('#halpshow').onclick = showHideHalp;
 
   // Add a single row
   addRow();
