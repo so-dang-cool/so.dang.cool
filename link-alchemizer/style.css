@@ -1,5 +1,8 @@
 #url_chunks {
     min-height: 24px;
+}
+
+#url_chunks textarea {
     min-width: 240px;
 }
 
