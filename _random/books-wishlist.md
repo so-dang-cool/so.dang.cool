@@ -1,0 +1,11 @@
+- https://www.lulu.com/shop/andrea-arpaci-dusseau-and-remzi-arpaci-dusseau/operating-systems-three-easy-pieces-hardcover-version-100/hardcover/product-15gjeeky.html
+- https://www.lulu.com/shop/doug-hoyte/let-over-lambda/paperback/product-18dzger.html
+- https://www.lulu.com/shop/greg-wilson-and-amy-brown/the-architecture-of-open-source-applications/paperback/product-12vn4q2m.html
+- https://www.lulu.com/shop/greg-wilson-and-amy-brown/the-architecture-of-open-source-applications-volume-ii/paperback/product-179gkqj8.html
+- https://www.lulu.com/shop/luc-volders/esp32-simplified/paperback/product-5yr98e.html
+- https://www.lulu.com/shop/roger-wagner/assembly-lines-the-complete-book/hardcover/product-1gg466qp.html
+- https://www.lulu.com/shop/bard-papegaaij-and-annika-klyver-and-milan-guenther-and-wolfgang-goebl/enterprise-design-patterns/paperback/product-qjemzg.html
+- https://www.lulu.com/shop/the-open-organization-community-/the-open-organization-leaders-manual-second-edition/paperback/product-1dz5ek9d.html
+- https://www.lulu.com/shop/lisa-askins/how-to-be-different/ebook/product-2yq4k6.html
+- https://www.lulu.com/shop/nick-van-dam/elevating-learning-development-paperback/paperback/product-1g25m5yz.html
+
