@@ -1,0 +1,43 @@
+body {
+    color: #ddd;
+    background-color: #333;
+    max-width: 50em;
+    margin: auto;
+    padding: 5vw;
+    font-family: 'Playfair Display', serif;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        color: #333;
+        background-color: #ddd;
+    }
+}
+
+a {
+    color: #dbc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (prefers-color-scheme: light) {
+    a {
+        color: #534;
+    }
+}
+
+pre {
+    font-family: 'Lucida Console', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+}
+
+.center {
+    text-align: center;
+}
+
+td {
+    padding: .5em;
+}
+
+td:nth-child(1), td:nth-child(2), td:nth-child(3) {
+    text-align: center;
+}
