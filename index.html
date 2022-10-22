@@ -15,7 +15,7 @@
       body {
         color: #ddd;
         background-color: #333;
-        max-width: 40em;
+        max-width: 50em;
         margin: auto;
         padding: 5vw;
         font-family: 'Playfair Display', serif;
@@ -46,6 +46,12 @@
       .center {
         text-align: center;
       }
+      td {
+        padding: .5em;
+      }
+      td:nth-child(1), td:nth-child(2), td:nth-child(3) {
+        text-align: center;
+      }
     </style>
   </head>
 
@@ -68,69 +74,143 @@
       </p>
     </header>
 
-    <hr>
-
     <main>
 
-      <h1>Projects</h1>
-
-      <h2>Command-line tools</h2>
-
-      <ul>
-        <li>
-          <a href='https://github.com/hiljusti/sigi'>sigi</a> is an organizational tool for people (like me) who hate organizing.
-          <i>Since 2021, Rust.</i>
-        </li>
-        <li>
-          <a href='https://github.com/hiljusti/findup'>findup</a> is a simple tool for finding your way back "up" to places like a project root.
-          <i>Since 2021, Zig.</i>
-        </li>
-        <li>
-          <a href='https://github.com/hiljusti/fib'>fib</a> is a tool for getting fibonacci numbers, using all the best tricks of Haskell.
-           <i>Since 2021, Haskell.</i>
-        </li>
-        <li>
-          <a href='https://github.com/hiljusti/yaml2toml'>yaml2toml</a> is a tool that turns yaml into toml.
-          (For something better, see <a href='https://github.com/sclevine/yj'>yj</a>)
-          <i>Since 2021, Python.</i>
-        </li>
-      </ul>
-
-      <h2>Libraries</h2>
-
-      <ul>
-        <li>
-          <a href='https://github.com/hiljusti/z'>z</a> is a Java library for fusing functions together, Dragonball Z style.
-          <i>Since 2021, Java</i>
-        </li>
-        <li>
-          <a href='https://github.com/hiljusti/singleton'>singleton</a> is a Java library with a general-purpose singleton implementation.
-          <i>Since 2021, Java</i>
-        </li>
-      </ul>
-
       <hr>
 
-      <h1>
-        Polyglot adventures
-      </h1>
-      
-      <ul>
-        <li>
-          <a href='https://github.com/hiljusti/hello'>hello</a> is a collection of a few compiled "Hello world" apps.
-          Intended as a resource for comparing languages like C, Forth, COBOL, and others.
-          (For so much more, see <a href='https://rosettacode.org'>Rosetta Code</a>.)
-          <i>Since 2020, Various</i>
-        </li>
-      </ul>
-      
-      <hr>
-      
-      <h2>Public Solutions</h2>
+      <h1 id="works" class="center">Works</h1>
+
+      <p>The following works are ordered roughly by the level of interest I've seen.</p>
 
       <p>
-        The following are solutions to some online challenges. Sometimes
-        challenges get updated, so these may become out of date but were working
+        Projects with a + after the year are projects I do not consider stable,
+        and expect to actively think about and work on. Projects without a +
+        after the year are relatively stable; I may still make edits to them over
+        time, but I'm not thinking about them or planning more work for them.
+      </p>
+
+      <hr>
+
+      <h2 class="center">Tools & Languages</h2>
+
+      <table>
+        <tbody>
+          <tr>
+            <td><a href='https://github.com/hiljusti/sigi'>sigi</a></td>
+            <td>2021+</td>
+            <td>Rust</td>
+            <td>An organizational tool for people (like me) who hate organizing.</td>
+          </tr>
+          <tr>
+            <td><a id="dt" href='https://github.com/hiljusti/dt'>dt</a></td>
+            <td>2022+</td>
+            <td>Rust</td>
+            <td>An interpreted programming language. It's duck tape for your unix pipe.</td>
+          </tr>
+          <tr>
+            <td><a href='https://github.com/hiljusti/findup'>findup</a></td>
+            <td>2021+</td>
+            <td>Zig</td>
+            <td>A simple tool for finding your way back "up" to places like a project root.</td>
+          </tr>
+          <tr>
+            <td><a href='https://github.com/hiljusti/fib'>fib</a></td>
+            <td>2021</td>
+            <td>Haskell</td>
+            <td>A tool for getting fibonacci numbers, using all the best tricks of Haskell.</td>
+          </tr>
+          <tr>
+            <td><a href='https://github.com/hiljusti/yaml2toml'>yaml2toml</a></td>
+            <td>2021</td>
+            <td>Python</td>
+            <td>A tool that turns yaml into toml. (Yes, <a href='https://github.com/sclevine/yj'>yj</a> is better.)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="center">Libraries</h2>
+
+      <table>
+        <tbody>
+          <tr>
+            <td><a href='https://github.com/hiljusti/z'>Z</a></td>
+            <td>2021+</td>
+            <td>Java</td>
+            <td>Fuse functions together.</td>
+          </tr>
+          <tr>
+            <td><a href='https://github.com/hiljusti/levee'>Levee</a></td>
+            <td>2022</td>
+            <td>Java</td>
+            <td>A Java library with a general-purpose singleton implementation.</td>
+          </tr>
+          <tr>
+            <td><a href='https://github.com/hiljusti/pair'>Pair</a></td>
+            <td>2022</td>
+            <td>Java</td>
+            <td>
+              A simple pair and drop-in shim for the beloved <pre>javafx.util.Pair</pre>
+              class that was included in JDK 8. (And is still available in the
+              <a href="https://openjfx.io">JavaFX project</a>)
+            </td>
+          </tr>
+          <tr>
+            <td><a href='https://github.com/hiljusti/singleton'>Singleton</a></td>
+            <td>2021</td>
+            <td>Java</td>
+            <td>A Java library with a general-purpose singleton implementation.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h1 class="center">Misc</h1>
+
+      <table>
+        <tbody>
+          <tr>
+            <td><a href='https://github.com/hiljusti/hello'>hello</a></td>
+            <td>2020+</td>
+            <td>Various</td>
+            <td>
+              A collection of a few compilable "Hello world" apps. Intended as a
+              resource for comparing languages like C, Forth, COBOL, and others.
+              (For so much more, see <a href='https://rosettacode.org'>Rosetta Code</a>.)  
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h1 class="center">Experimental & Unfinished</h1>
+      
+      <table>
+        <tbody>
+          <tr>
+            <td><a href='https://github.com/hiljusti/rail'>Rail</a></td>
+            <td>2021+</td>
+            <td>Rust</td>
+            <td>
+              A concatenative programming language and virtual stack machine. Not looking
+              to be stable any time soon. Forms the basis of <a href="#dt">dt</a>.
+            </td>
+          </tr>
+          <tr>
+            <td><a href='https://github.com/hiljusti/lyle'>Lyle</a></td>
+            <td>2022+</td>
+            <td>Rust?</td>
+            <td>
+              An (unofficial) assembler for processors compatible with the Xtensa instruction
+              set architecture. This is the instruction set used by the popular ESP32 and ESP8266
+              chips, among others.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h2 class="center">Public Solutions</h2>
+
+      <p>
+        The following are solutions to various online coding challenges. Sometimes
+        challenges get updated, so these may become out of date. They were working
         at the time of commit.
       </p>
 
@@ -157,4 +237,3 @@
     </main>
   </body>
 </html>
-
