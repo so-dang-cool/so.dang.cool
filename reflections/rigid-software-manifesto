@@ -1,0 +1,134 @@
+Rigid Software
+
+
+First a disclaimer:
+
+This reflection is inspired by the Agile Software Manifesto, but differs
+drastically in the flavor of software considered. The Agile Manifesto is
+appropriate for most software development.
+
+I'll probably take more time to reflect and also come up with something
+manifesto-esque for Rigid Software.
+
+
+Next, a quick tour of my early career:
+
+I've been reflecting on a career at Amazon that has lasted me 9 years now.
+I started in 2014 (age of 29) in an AWS call center answering "Help my website
+is down" and "Why was I charged $30, I thought I was on the free tier?" calls
+with refunds and basic tech advice.
+
+I also joined when AWS had plenty of opportunity, and got to put my hobby
+programming skills to immediate use.
+
+My first notable project was to automate the manual effort in filling out
+refunds. (Side note: AWS invoices were, and still are, more complicated than
+pre-mobile phone bills) The automation I wrote was precise and fast; it brought
+a manual process that took minutes down to seconds and in the most complicated
+cases down from hours or days down to minutes. Based on the number of refunds
+performed and an average hourly salary rate, this reduced operating costs of AWS
+Support by more than $1mm for the remainder of that year alone.
+
+That project, called WORCH (Web Ops Refund Charges Helper), is long-dead. It
+lived a peaceful life, with a handful of features delivered over time, and its
+features were eventually rolled in to a replacement.
+
+I wrote a number of other tools here for Support: A call center dashboard,
+feedback rating systems, analytics dashboards for "the leads," and more.
+
+I also wrote some things that were more general: An Excel plugin for formatting
+AWS Account IDs and not choking on leading zeroes, a "kiosk" (most credit here
+goes to Matty Kahler) that templated communication with many service teams in
+Amazon, a tool for advanced browsing, and even a limit canary for the "Builder
+Tools" Move-to-AWS account so developers trying to provision more resources
+wouldn't get blocked by AWS resource limits.
+
+Times changed and I moved teams. I worked in AWS support from April 14, 2014
+until September 4, 2017. Today I work in the "Amazon Software Builder
+Experience" team, and I personally maintain the build tooling and internal
+ecosystem for Java. Amazon is primarily a Java shop and Java usage is still
+increasing in use, although many other languages are now increasing in use even
+faster. Amazon is also investing in languages of its own, some of my favorites
+are Dafny, P, and HOL Light.
+
+
+They Just Won't Die:
+
+I've changed organizations a few times, and yet I still own software from that
+first AWS Support organization I was part of. In the 9 years I've been at
+Amazon, there's been a legacy of teams that have produced software unique to
+AWS Support, with a changing roster of managers, engineers, and other folks.
+
+Despite the constant funding, and even plans to _replace_ things, even
+design documents(!), I'm still on the hook for some old projects.
+
+The shelf life was very low for the "product" software -- dashboards and
+analytics were all gladly accepted and (presumably) replaced with something
+more modern or robust than the simple Flask and Sinatra sites that I produced
+at the time.
+
+There was a medium shelf life on that limit canary. At some point someone
+decided that my NodeJS script wasn't the right technical choice, and a nice
+fellow in a military apprenticeship rewrote it in Python. Why it had to be
+rewritten at all is still beyond me, but it gave that guy a good project to
+sink his teeth into, and he succeeded and moved into a full-time engineering
+role, so I guess it was worth it.
+
+The shelf life of a few projects seems like they could outlive me. These tools
+are much harder to find owners for... So I still own them!
+
+I want to focus on these three tools: The AWS Account Excel Plugin, the Link
+Alchemizer, and the "Ticket Kiosk."
+
+
+AWS Account Excel Plugin
+
+The AWS Account Excel Plugin is simple: It plugs in to Microsoft Excel and
+formats selected cells as "AWS Account ID" which is a number of exactly 12
+digits. It exists because AWS Account IDs are only digits and can have leading
+zeroes. Excel loads numbers with leading zeroes as numbers, and saves them
+without the leading zeroes. This is a reasonable choice, but it ends up as a
+major annoyance for people who need to shuffle AWS Account IDs around and feed
+them to various systems that might actually care about the leading zeroes.
+
+It's a pretty perfect example of Rigid Software: I wrote it one time back in
+2017ish with a trial version of Visual Studio, and it has not needed an update
+since. There are no additional features to add, there's no roadmap, there's no
+backlog, it solved a problem and just exists and continues to spread in use by
+people who have to do things with Excel. There's a potential that Excel could
+drop support for what the plugin does, and a change might be required, or that
+a different spreadsheet software could overtake Excel in prominence... But all
+said, it's been running for 6 years on who-knows how many laptops across
+who-knows how many teams and organizations.
+
+
+Link Alchemizer
+
+The Link Alchemizer is a thing that can take portions of URLs, produce all
+their combinations, and open them all up. I've added all of 1 feature since
+I first wrote it in 2014, and now the tool (internal to Amazon) gets tens of
+thousands of unique visitors in a month. It's part of workflows of parts of
+Amazon that I didn't know existed.
+
+(Side note: I also got approval and rewrote an open source version [here](https://so.dang.cool/link-alchemizer))
+
+There have been some feature requests here, mostly for things that would help
+one specific team with one specific workflow, and would wreck the experience
+for everyone else.
+
+It's also Rigid Software: I wrote it in 2014 and it has continued to be useful.
+I've added only one feature (a limit for the number of tabs to open at a given
+time), and have made one other patch to it since it takes a single JS dependency
+that needed an upgrade for security reasons.
+
+
+The "Ticket Kiosk"
+
+The Kiosk is [TODO]
+
+[TODO]
+
+(Of course... I've gone on to write a _lot_ more software since 2017, services,
+libraries, build systems, and more, but I want to focus on the oldest things.)
+
+
