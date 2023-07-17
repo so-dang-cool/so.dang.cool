@@ -31,7 +31,7 @@ jobs:
         with:
           mdbook-version: 'latest'
 
-      - name: Run mdBook (user-guide)
+      - name: Run mdBook (thinks)
         working-directory: './thinks/'
         run: mdbook build
 
