@@ -1,8 +1,8 @@
-# Reflections on Amazon's codebase
+# Dependency Management, and Reflections on Amazon's codebase
 
-This is not about Amazon, or my reasons for departure, but simply some
-reflections after working on a massive polyglot enterprise codebase that I'd
-really like to share.
+This is not primarily about Amazon, or my reasons for departure. Departing has
+given me a reason to do some reflections after working on a massive polyglot
+enterprise codebase that I'd really like to share.
 
 In 2020 I joined a fledgling area of Amazon that was later called "Code
 Foundations." (There were many name changes of organizations and teams during
@@ -21,9 +21,9 @@ related business entities.
 # What Amazon kinda-sorta looks like from the deepest levels
 
 I've spent the last 3 years up to my eyeballs in Amazon's and AWS's codebases.
-Polyglot, primarily Linux-based, everything built from scratch starting from C
-librariess up to CPAN up to maven up to crates.io, with many ecosystems
-present.
+Polyglot, primarily Linux-based, primarily developed on Macs (Linux for me),
+nearly everything in the codebase is built from scratch starting from C
+libraries, with many sub-ecosystems based on languages and disciplines present.
 
 There are also two major internal 1p code bases with their own ideas of
 package/dependency management. The older code base predates Maven Central and
@@ -64,23 +64,23 @@ here.
 Many times the discussions of dependency management, or "dependency engineering"
 as one writer has recently put it, only go as deep as
 "[the diamond problem](https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem)"
-or other talk about version conflicts and which version to choose when two
+or other talk about version conflicts and which version to choose when two+
 things want different versions of the same thing. These are kind of the
-"missing semicolon" problems of dependency management. They're minor annoyances
-and just so occasionally they might cause a hard problem, but they're also kind
-of the baby steps into the space.
+"missing semicolon" problems of dependency management. They're minor annoyances,
+and occasionally they might cause a hard problem, but they're also kind of the
+baby steps into the space.
 
 > Note: The best mature discussion of dependency management, for my money, is
 part of Rich Hickey's [Spec-ulation Keynote](https://www.youtube.com/watch?v=oyLBGkS5ICk)
 from Clojure/conj 2016. Some ideas here are absolutely building on his
-observations here.
+observations there.
 >
 > There are many other interesting articles and war stories told of dependency
 management, and of course I have my own experiences. I'm convinced right now,
 though, that dependency management is a largely unexplored field. It's sort of
-like build systems which has about [one really good research paper](https://www.microsoft.com/en-us/research/publication/build-systems-a-la-carte/).
+like build systems which I think has just [a single good research paper](https://www.microsoft.com/en-us/research/publication/build-systems-a-la-carte/).
 
-## It can't be about versions
+## Dependency management can't be (only) about versions
 
 I think the most critical part of whatever will bring sanity to dependency
 management can not think in terms of "versions," whatever that actually means.
@@ -138,17 +138,38 @@ trust yourself (or teammates or whatever) to properly interpret it. It's all a
 house of cards trust system with humans who make errors. Trust systems work to
 an extent, but only to an extent.
 
-Of course, it all works better in small doses. C++ devs might have an idea
-here with their lack of a single standard package manager, and tendency to
-write a lot from scratch. (Unless it comes from Boost.) Then again... these are
-projects that are also very sensitive to change!
+Of course, it all works better in small doses. C and C++ devs might be on to
+something with a lack of a single standard package manager, and a tendency to
+write a lot from scratch. (Unless it comes from Boost.) Chuck Moore's seeming
+ability to think in [144 dimensions](https://www.youtube.com/watch?v=0PclgBd6_Zs)
+may come from similar freedoms. Then again... these projects can also be
+sensitive to change and age poorly!
 
 # What do we really need in dependency management?
 
 At the end of the day, taking a dependency is really about getting a subset of
 code from a codebase.
 
-I think some of the big missing features in dependency management systems are:
+We need to be upgrading over time; software upgrades costs more in the future
+than they do today. I can't quite articulate this concisely yet, and still need
+a few more hours rambling over drinks to really solidify my elevator pitch.
+There are a lot of reasons here, but the general gist is that if you have a
+dependency, it's really convenient to use more of it than you already do, and
+everyone in your dependency tree has a similar incentive to bind more tightly
+over time to dependencies. Some percent of those relationships are binding more
+tightly to the tree as it exists, and slowly putting out roots that are much
+harder to prune than branches. If all of the system is not being renewed, then
+it's ossifying. (Or when God is merciful: simply being stable.)
+
+The effects of ossification are smaller when considering an individual piece
+of software, but these effects are visceral when you work on something the
+size of Amazon. (Package maintainers for Linux and BSD distributions know this
+too.) When working on something the size of Maven or NPM or PyPI, I think the
+only solution these days is to treat the ecosystem as an ecosystem where some
+stuff is going to be too weak and die, and other stuff is going to adapt and
+breed and carry on a legacy. (Or: the market will pick the winners and losers.)
+
+Anyway, some of the big missing features in dependency management systems are:
 
 ## 1. Update when nothing has changed
 
@@ -219,17 +240,6 @@ as actually performing upgrades. Automating an understanding of compatibility
 of potential upgrades (Above sort of hand-waved as "metadata") is a step
 towards getting there.
 
-Software upgrades costs more in the future than they do today. I can't quite
-articulate this concisely yet, and still need a few more hours rambling over
-drinks to really solidify. There are a lot of reasons here, but the general
-gist is that if you have a dependency, it's really convenient to use more of it
-than you already do, and everyone in your dependency tree has a similar
-incentive to bind more tightly over time to dependencies. Some percent of
-those relationships are binding more tightly to the tree as it exists, and
-slowly putting out roots that are much harder to prune than branches. If all
-of the system is not being renewed, then it's ossifying. (Or if God has mercy,
-simply being stable.)
-
 ### Other actual issues
 
 1. Why do we even use so many dependencies? Can't we reduce this over time? The
@@ -253,4 +263,16 @@ simply being stable.)
 
 3. How do we ever begin to build trust in software? Signatures are... a step.
    Reproducible builds are also a step.
+
+# Closing
+
+When all is said and done, I think we'll get there. I think we'll figure out
+how to make it all work, and get move on to just building software and not spending
+so much time figuring out out supply chain and all this stuff. Dependency
+management has some hard problems, but I don't think they're unsolvable
+problems. [I believe in you](https://www.youtube.com/watch?v=IP8JgWd6TW0).
+
+Wow, did anyone read all of this? If so, please take a break, this was pretty
+stream-of-consciousness and rambly. Let's grab a drink or chat sometime on why
+it matters to you.
 

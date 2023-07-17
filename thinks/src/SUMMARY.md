@@ -4,5 +4,5 @@
 
 # Software Ecosystems
 
-- [Reflections on Amazon's codebase](./ecosystem/amazon-reflections.md)
+- [Dependency Management and Reflections on Amazon's Codebase](./ecosystem/dependency-management-and-amazon-reflections.md)
 
