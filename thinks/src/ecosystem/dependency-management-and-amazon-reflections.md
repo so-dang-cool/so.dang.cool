@@ -198,6 +198,9 @@ Evaluating the metadata, if it exists, is well-suited for a logic programming
 style solution that unifies with a bias towards recency... if only the metadata
 was available!
 
+> **Note**: I've been informed that Blaze, Bazel, and Buck all have this as
+part of their strategy. Thanks Aaron Sheldon, I need to get out of my cave.
+
 ### And there are gotchas
 
 "Update when nothing changed" can only ever rise to an imperfect solution, but
