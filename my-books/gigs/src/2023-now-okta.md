@@ -1,4 +1,5 @@
-# Okta, SDK Engineer: July 2023 - Now
+# Okta, SDK Engineer
+# July 24, 2023 - Present
 
 I am currently working in Okta's Auth0 team, and providing SDKs in Java and
 Rust for the OpenFGA project.
