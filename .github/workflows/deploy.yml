@@ -34,12 +34,12 @@ jobs:
       - name: Run mdBook (thinks)
         working-directory: './my-books/thinks/'
         run: |-
-            mdbook build -d '../../thinks/
+            mdbook build -d '../../thinks/'
 
       - name: Run mdBook (projects)
         working-directory: './my-books/projects/'
         run: |-
-            mdbook build -d '../../projects/
+            mdbook build -d '../../projects/'
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
