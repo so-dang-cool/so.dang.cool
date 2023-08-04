@@ -1,5 +1,7 @@
 # Dependency Management, and Reflections on Amazon's codebase
 
+![A battle between a little guy and a big mechanical monster](./trying-to-fix-live-vs.png)
+
 This is not primarily about Amazon, or my reasons for departure. Departing has
 given me a reason to do some reflections after working on a massive polyglot
 enterprise codebase that I'd really like to share.
