@@ -1,5 +1,6 @@
 body {
     color: #ddd;
+    background-color: black;
     background-image: url("flower-circuit-tile.png");
     max-width: 50em;
     margin: auto;
