@@ -103,9 +103,9 @@
       <pre><code class='language-java'>
 import java.util.function.Function;
 
-public interface Monad<A> {
-    Monad<A> unit(A a);
-    Monad<B> bind(Function<A, Monad<B>> f);
+public interface Monad&lt;A&gt; {
+    Monad&lt;A&gt; unit(A a);
+    Monad&lt;B&gt; bind(Function&lt;A, Monad&lt;B&gt;&gt; f);
 }
       </code></pre>
 
@@ -133,9 +133,9 @@ class Monad(ABC, Generic[A]):
 
       <h2 id='typescript'>TypeScript</h2>
       <pre><code class='language-typescript'>
-export interface Monad<A> {
-    unit(a: A) => Monad<A>;
-    bind<B>(f: (a: A) => Monad<B>) => Monad<B>;
+export interface Monad&lt;A&gt; {
+    unit(a: A) =&gt; Monad&lt;A&gt;;
+    bind&lt;B&gt;(f: (a: A) =&gt; Monad&lt;B&gt;) =&gt; Monad&lt;B&gt;;
 };
       </code></pre>
 
