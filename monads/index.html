@@ -4,12 +4,17 @@
   <head>
     <title>Monads - so.dang.cool</title>
     <meta charset='utf-8' />
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='/style.css'>
 
     <meta property="og:image" content="https://so.dang.cool/preview.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="512">
+
+    <!-- highlight.js (See: https://github.com/highlightjs/highlight.js) -->
+    <link rel='stylesheet' href='https://unpkg.com/browse/@highlightjs/cdn-assets@11.8.0/styles/tokyo-night-dark.min.css'>
+    <script src='https://unpkg.com/browse/@highlightjs/cdn-assets@11.8.0/highlight.min.js'></script>
+    <script>hljs.highlightAll();</script>
 
     <!-- Thanks to https://favicomatic.com -->
     <link rel="icon" type="image/png" href="https://so.dang.cool/favicon-196x196.png" sizes="196x196" />
@@ -43,9 +48,97 @@
     </header>
 
     <main>
+
+      <h2>Monads</h2>
       <p>
-        Coming soon
+        A monad can be thought of as a simple interface. Rather than giving a
+        lengthy and winding explanation, of which you can find _so so many_,
+        I want to just show you a Monad in a language you might recognize. I
+        believe just seeing the code can give you the context to understand
+        lengthier explanations like this nice one from Wikipedia:
+      <p>
+      <ul>
+        <li><a href='https://en.wikipedia.org/wiki/Monad_(functional_programming)'>
+          Monad (functional programming)
+        </a></li>
+      </ul>
+
+      <h3>Disclaimer</h3>
+      <p><i>
+        This is a "Monad" as implemented in Haskell and similar FP languages.
+        That's not the same as a "monad" from category theory. Learning the
+        difference is left as exercise for the reader.
+      </i></p>
+
+      <h2>Languages</h2>
+      <ul>
+        <li><a href='#java'>
+          Java
+        </a></li>
+        <li><a href='#python'>
+          Python
+        </a></li>
+        <li><a href='#typescript'>
+          TypeScript
+        </a></li>
+      </ul>
+
+      <p>
+        I'll update occasionally with other languages as time permits.
       </p>
+      <p>
+        The examples favor languages with some kind of typing. I don't have
+        anything against languages without explicit types, I've even
+        <a href='https://dt.plumbing'>written one of my own</a>, but it's much
+        harder to directly communicate the Monad pattern without types.
+      </p>
+
+      <hr>
+
+      <h1>Ok let's do this!</h1>
+
+<!-- Java -->
+
+      <h2 id='java'>Java</h2>
+      <pre><code class='language-java'>
+import java.util.function.Function;
+
+public interface Monad<A> {
+    Monad<A> unit(A a);
+    Monad<B> bind(Function<A, Monad<B>> f);
+}
+      </code></pre>
+
+<!-- Python -->
+
+      <h2 id='python'>Python</h2>
+      <pre><code class='language-python'>
+from abc import ABC
+from typing import Callable, Generic, TypeVar
+
+A = TypeVar('A')
+B = TypeVar('B')
+
+class Monad(ABC, Generic[A]):
+    @abstractmethod
+    def unit(A) -> Monad[A]:
+        raise NotImplementedError("unit")
+
+    @abstractmethod
+    def bind(self, f: Callable[A, Monad[B]]) -> Monad[B]:
+        raise NotImplementedError("bind")
+      </code></pre>
+
+<!-- TypeScript -->
+
+      <h2 id='typescript'>TypeScript</h2>
+      <pre><code class='language-typescript'>
+export interface Monad<A> {
+    unit(a: A) => Monad<A>;
+    bind<B>(f: (a: A) => Monad<B>) => Monad<B>;
+};
+      </code></pre>
+
     </main>
 
     <footer>
