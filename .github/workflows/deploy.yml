@@ -26,6 +26,15 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
+      - name: Setup dt
+        uses: yaxitech/nix-install-pkgs-action@v3
+        with:
+          packages: "dt"
+          inputs-from: 'github:so-dang-cool/dt'
+
+      - run: |
+          dt 1 exit
+
       - name: Setup mdBook
         uses: peaceiris/actions-mdbook@v1
         with:
