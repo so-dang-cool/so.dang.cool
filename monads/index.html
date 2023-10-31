@@ -105,7 +105,7 @@ import java.util.function.Function;
 
 public interface Monad&lt;A&gt; {
     Monad&lt;A&gt; unit(A a);
-    Monad&lt;B&gt; bind(Function&lt;A, Monad&lt;B&gt;&gt; f);
+    &lt;B&gt; Monad&lt;B&gt; bind(Function&lt;A, Monad&lt;B&gt;&gt; f);
 }
       </code></pre>
 
