@@ -26,6 +26,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
+      - uses: cachix/install-nix-action@v22
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Setup dt
         uses: yaxitech/nix-install-pkgs-action@v3
         with:
