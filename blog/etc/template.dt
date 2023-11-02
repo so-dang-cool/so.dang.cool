@@ -10,8 +10,4 @@
   "" join
 ] \fill def!
 
-[ ] [
-     "etc/head.html.partial" readf fill
-     main
-     "etc/foot.html.partial" readf fill
-] doin unlines
+"etc/blog.html.template" readf fill
