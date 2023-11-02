@@ -26,24 +26,23 @@
 
 ### Blog posts ###
 
-"posts" cd ls
+"posts" cd ls ".." cd
 [ ".part" ends-with? ] filter
 [ \filename:
+  "posts" filename push "/" join \source:
   filename drop-ext \html-filename:
   html-filename drop-ext \post-name:
 
   ### Render the post ###
   post-name
-  filename readf fill
+  source readf fill
   blog html-filename writef
 
   ### Return the list item for index ###
-  [ "    <li><a href='posts/" html-filename "'>" post-name "</a></li>" ] \do map
+  [ "    <li><a href='" html-filename "'>" post-name "</a></li>" ] \do map
   "" join
 ] map
 sort rev unlines \posts:
-
-".." cd
 
 
 ### Blog index ###
