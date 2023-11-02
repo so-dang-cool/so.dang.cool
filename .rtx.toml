@@ -1,0 +1,6 @@
+[tools]
+dt = "latest"
+
+[plugins]
+dt = 'https://github.com/so-dang-cool/asdf-dt'
+

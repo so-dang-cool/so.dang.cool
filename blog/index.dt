@@ -1,0 +1,13 @@
+#!/usr/bin/env dt
+
+"so.dang.cool :: Boonie Pepper Bites" \title:
+
+[
+"    <main>"
+"      <h1>Boonie Pepper Bites</h1>"
+"      <p>Coming soon...</p>"
+"    </main>"
+] \main def
+
+"etc/template.dt" readf eval
+

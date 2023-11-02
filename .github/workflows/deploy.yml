@@ -26,17 +26,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
-      - uses: cachix/install-nix-action@v22
-        with:
-          github_access_token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Setup dt
-        uses: yaxitech/nix-install-pkgs-action@v3
-        with:
-          packages: "dt"
-          inputs-from: 'github:so-dang-cool/dt'
-
-      - run: |
+      - name: Setup rtx
+        uses: jdx/rtx-action@v1
+      
+      - name: Sanity test dt
+        run: |
           dt 1 exit
 
       - name: Setup mdBook
