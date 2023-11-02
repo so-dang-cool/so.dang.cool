@@ -1,0 +1,12 @@
+#!/usr/bin/env dt
+
+"so.dang.cool :: Boonie Pepper Bites" \title:
+
+[ "/" split last ] \basename def
+
+[ "index.html.part" readf fill ] \main def
+
+"etc/template.dt" readf eval
+
+"index.html" writef
+

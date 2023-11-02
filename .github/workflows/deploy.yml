@@ -32,7 +32,7 @@ jobs:
       - name: Generate blog (with dt)
         run: |-
           cd blog
-          ./index.dt
+          ./gen.dt
 
       - name: Setup mdBook
         uses: peaceiris/actions-mdbook@v1
