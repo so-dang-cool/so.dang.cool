@@ -19,9 +19,35 @@
 # TODO: dirname/basename should be in dt
 [ "/" split last ] \basename def
 
+[ "." split pop drop "." join ] \drop-ext def
+
+[ "so.dang.cool ::" push rev unwords ] \as-title def
+
+
+### Blog posts ###
+
+"posts" cd ls
+[ ".part" ends-with? ] filter
+[ \filename:
+  filename drop-ext \html-filename:
+  html-filename drop-ext \post-name:
+
+  ### Render the post ###
+  post-name
+  filename readf fill
+  blog html-filename writef
+
+  ### Return the list item for index ###
+  [ "    <li><a href='posts/" filename "'>" post-name "</a></li>" ] \do map
+  "" join
+] map
+sort rev unlines \posts:
+
+".." cd
+
 
 ### Blog index ###
 
-"so.dang.cool :: Boonie Pepper Bites"
+"Boonie Pepper Bites" as-title
 "index.html.part" readf fill
 blog "index.html" writef
