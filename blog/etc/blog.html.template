@@ -35,19 +35,30 @@
         </pre>
       </div>
 
+      <p><h3><a href='https://so.dang.cool/blog/'>
+        Boonie Pepper Bites
+      </a></h3></p>
       <p>
         Projects and thoughts of J.R. "Boonie Pepper" Hill.
       </p>
     </header>
 
+    <hr>
+
     <main>
 {{ main }}
     </main>
+
+    </hr>
 
     <footer>
       <hr>
       <center>
         <p>2023, J.R. Hill</p>
+        <p><em>
+          Generated with <a href='https://dt.plumbing'">dt</a>
+          (<a href='https://github.com/so-dang-cool/so.dang.cool/tree/main/blog'>source</a>)
+        </em></p>
         <p>
           <a href='https://github.com/booniepepper'>github</a> |
           <a href='https://booniepepper.itch.io'>itch.io</a> |
