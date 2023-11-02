@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <meta charset='utf-8' />
+    <link rel='stylesheet' href='/style.css'>
+
+    <meta property='og:image' content='https://so.dang.cool/preview.png'>
+    <meta property='og:image:type' content='image/png'>
+    <meta property='og:image:width' content='1024'>
+    <meta property='og:image:height' content='512'>
+
+    <!-- Thanks to https://favicomatic.com -->
+    <link rel='icon' type='image/png' href='https://so.dang.cool/favicon-196x196.png' sizes='196x196' />
+    <link rel='icon' type='image/png' href='https://so.dang.cool/favicon-32x32.png' sizes='32x32' />
+    <link rel='icon' type='image/png' href='https://so.dang.cool/favicon-16x16.png' sizes='16x16' />
+    <link rel='icon' type='image/png' href='https://so.dang.cool/favicon-128.png' sizes='128x128' />
+
+    <!-- 'Playfair Display' Font: https://fonts.google.com/specimen/Playfair+Display?category=Serif&sort=popularity -->
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'>
+  </head>
+
+  <body>
+
+    <div id='strip'>
+    <header class='center'>
+      <div>
+        <pre>
+░█▀▀░█▀█░░░░█▀▄░█▀█░█▀█░█▀▀░░░░█▀▀░█▀█░█▀█░█░░
+░▀▀█░█░█░░░░█░█░█▀█░█░█░█░█░░░░█░░░█░█░█░█░█░░
+░▀▀▀░▀▀▀░▀░░▀▀░░▀░▀░▀░▀░▀▀▀░▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀
+        </pre>
+      </div>
+
+      <p>
+        Projects and thoughts of J.R. "Boonie Pepper" Hill.
+      </p>
+    </header>
