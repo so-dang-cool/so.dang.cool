@@ -62,4 +62,5 @@
 "    </div> <!-- /strip -->"
 "  </body>"
 "</html>"
-] [] swap doin pls
+] [] swap doin unlines
+
