@@ -1,12 +1,27 @@
 #!/usr/bin/env dt
 
-"so.dang.cool :: Boonie Pepper Bites" \title:
+[ "}}" split deq [code literal]:
+  code eval
+  literal push "" join
+] \fill-part def!
 
+[ "{{" split deq 
+  \fill-part map enq
+  "" join
+] \fill def!
+
+"etc/blog.html.template" readf \blog-template:
+
+[ [title main]:
+  blog-template fill
+] \blog def!
+
+# TODO: dirname/basename should be in dt
 [ "/" split last ] \basename def
 
-[ "index.html.part" readf fill ] \main def
 
-"etc/template.dt" readf eval
+### Blog index ###
 
-"index.html" writef
-
+"so.dang.cool :: Boonie Pepper Bites"
+"index.html.part" readf fill
+blog "index.html" writef

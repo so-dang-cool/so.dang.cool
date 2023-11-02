@@ -40,9 +40,9 @@
       </p>
     </header>
 
-<!--  main -->
+    <main>
 {{ main }}
-<!-- /main -->
+    </main>
 
     <footer>
       <hr>

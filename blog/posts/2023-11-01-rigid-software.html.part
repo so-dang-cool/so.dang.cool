@@ -1,0 +1,45 @@
+<h1 id='rigid-software'>Rigid Software</h1>
+
+
+<h2 id='agility-the-virtue'>Agility, the Virtue</h2>
+
+<p>
+  There are many virtues in software. A list would include things like
+  simplicity, elegance, cleanliness, flexibility, generality, and of course
+  many more. As the senior engineer will tell you, "it depends," and different
+  communities will give different answers for their list of virtues and.
+</p>
+<p>
+  <a href='https://agilemanifesto.org'>Agility</a> is a virtue in the software
+  business. This is undeniable, and many tales sing the praises of rapid
+  development and how it can <a href='http://www.paulgraham.com/avg.html'>beat
+  the averages</a>. It's also unavoidable, and simply selling the idea of
+  "Agile" has in itself become an industry.
+</p>
+<aside>
+  The majority of "Agile" practices and content, in my experience, is neither
+  agile either by <a href='https://agilemanifesto.org'>the agile manifesto's
+  definition</a> or <a href='https://www.merriam-webster.com/dictionary/agile'>
+  a dictionary definition</a>. That's a story for a different time.
+</aside>
+<p>
+  Much of business is about adapting. New fields arise, new markets, new
+  competitors. Products decay, and the tools they were created with decay as
+  well. Software is no different from other industries. If anything, the
+  ephemeral nature of software pushes the birth/growth/decay/death cycle
+  away from the human and closer to that of the fruit fly.
+</p>
+
+
+<h2 id='agility-the-excess'>Agility, the Excess</h2>
+
+<p>
+  While agility is a virtue in the software <em>business</em> (and it certainly
+  is!) and also a virtue in the practice of crafting software, it is not a
+  universal virtue of all software. In particular, consider a software
+  <em>dependency</em> that changes often. Consider the churn, noise, and
+  breaking changes it delivers.
+</p>
+<p>
+  Finishing this thought soon...
+</p>
