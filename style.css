@@ -14,6 +14,11 @@ body {
     background-color: #111;
 }
 
+#sdc {
+    font-size: 2em;
+    line-height: 1ch;
+}
+
 a {
     color: #dbc;
     text-decoration: none;
