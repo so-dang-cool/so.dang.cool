@@ -12,9 +12,7 @@
 
 "blog.html.template" readf \blog-template:
 
-[ [title main]:
-  blog-template fill
-] \blog def!
+[ [title main]: blog-template fill ] \blog def!
 
 # TODO: dirname/basename should be in dt
 [ "/" split last ] \basename def
@@ -46,7 +44,6 @@ sort rev unlines \posts:
 
 
 ### Blog index ###
-
 
 "Boonie Pepper Bites" as-title
 [ "<ul>" posts "</ul>" ] [do "      " push rev "" join] map unlines
