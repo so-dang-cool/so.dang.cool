@@ -3,4 +3,8 @@ Some articles to write:
 * "Boonie Pepper" -- talk cultural appropriation vs celebration, also link to annie's chamorro kitchen
 * Dependency management, and what actually matters
 * How to write a language or 10
-
+* learn the system
+* play all the games
+* polyglot manifesto
+* rigid software manifesto
+* you gotta own it
