@@ -13,7 +13,7 @@ const main = () => {
 }
 
 const alchemize = () => {
-  [... document.querySelectorAll('#url_chunks textarea')]
+  [...document.querySelectorAll('#url_chunks textarea')]
     .map(textarea => textarea.value.split('\n'))
     .reduce((as, bs) => as.flatMap(a => bs.map(b => a + b)))
     .forEach(url => window.open(url));
