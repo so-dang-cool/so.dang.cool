@@ -1,0 +1,42 @@
+<h1>Lua Tooling</h1>
+
+<p>
+  The following is a work in progress list of tooling related to Lua. The
+  criteria for being included here is that the tool seems fleshed out, and
+  also works toward either composition of lua libraries or statically
+  compiling an executable. (Instead of embedding in C or another language.)
+</p>
+
+<p>
+  This may be a living document that's updated over time. Relationships of a
+  project to my goals, and the goals themselves, are all subject to change.
+</p>
+
+<h2>Lua</h2>
+
+<ul>
+  <li><a href='http://lua-users.org/wiki/BinToCee'>bin2c</a></li>
+  <li><a href='https://github.com/pocomane/glua'>glua</a></li>
+  <li>
+	<a href='https://git.disroot.org/mbo/lesi'>lesi</a>
+	<ul>
+	  <li>Actively developed</li>
+	  <li>Discord <a href='https://discord.gg/7wu7ZsW'>invite</a></li>
+	  <li>Discord <a href='https://discord.com/channels/561645196757041163/1167933889646444675'>channel</a></li>
+	</ul>
+  </li>
+  <li><a href='https://hg.sr.ht/~cloudninja/ljp'>LuaJit Packer</a></li>
+  <li><a href='https://luarocks.org'>LuaRocks</a></li>
+  <li><a href='https://github.com/ers35/luastatic'>luastatic</a></li>
+  <li><a href='https://luvit.io'>luvit</a></li>
+  <li><a href='https://web.tecgraf.puc-rio.br/~lhf/ftp/lua/#srlua'>srlua</a></li>
+</ul>
+
+<h2>Lua-adjacent</h2>
+
+<ul>
+  <li><a href='https://github.com/lunarlang/lunar'>Lunar</a></li>
+  <li><a href='https://nelua.io'>Nelua</a></li>
+  <li><a href='https://moonscript.org'>Moonscript</a></li>
+  <li><a href='https://github.com/teal-language/tl'>Teal</a></li>
+</ul>
