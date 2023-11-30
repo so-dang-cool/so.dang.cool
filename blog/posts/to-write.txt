@@ -3,6 +3,8 @@ Some articles to write:
 * "Boonie Pepper" -- talk cultural appropriation vs celebration, also link to annie's chamorro kitchen
 * Dependency management, and what actually matters
 * How to write a language or 10
+* Mediocrity considered Harmful -- RE: Alan Kay's "Normal Considered Harmful"
+* LLMs for PLDI is a terrible idea
 * learn the system
 * play all the games
 * polyglot manifesto
