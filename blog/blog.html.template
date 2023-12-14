@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ title }}</title>
+    <title>Boonie Pepper Bites :: {{ title }} :: so.dang.cool</title>
     <meta charset='utf-8' />
     <link rel='stylesheet' href='/style.css'>
 
@@ -46,10 +46,16 @@
     <hr>
 
     <main>
+
+<!-- BEGIN MAIN -->
+
 {{ main }}
+
+<!-- END MAIN -->
+
     </main>
 
-    </hr>
+    <hr>
 
     <footer>
       <hr>
@@ -57,7 +63,7 @@
         <p>2023, J.R. Hill</p>
         <p><em>
           Generated with <a href='https://dt.plumbing'">dt</a>
-          (<a href='https://github.com/so-dang-cool/so.dang.cool/tree/main/blog'>source</a>)
+          (<a href='https://github.com/so-dang-cool/so.dang.cool/tree/main/gh-pages'>source</a>)
         </em></p>
         <p>
           <a href='https://github.com/booniepepper'>github</a> |
