@@ -1,8 +1,8 @@
-name: Deploy so.dang.cool site content
+name: Render and deploy site content
 
 on:
   push:
-    branches: ["gh-pages"]
+    branches: [core]
 
   # Allows running the workflow manually from the Actions tab
   workflow_dispatch:
@@ -58,4 +58,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-
