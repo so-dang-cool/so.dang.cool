@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Boonie Pepper Bites :: {{ title }} :: so.dang.cool</title>
+    <title>{{ title }}</title>
     <meta charset='utf-8' />
     <link rel='stylesheet' href='/style.css'>
 
     <meta property='og:image' content='https://so.dang.cool/preview.png'>
-    <meta property='og:title' content='{{ title}}'>
+    <meta property='og:title' content='{{ title }}'>
     <meta property='og:image:type' content='image/png'>
     <meta property='og:image:width' content='1024'>
     <meta property='og:image:height' content='512'>
@@ -35,12 +35,9 @@
         </pre>
       </div>
 
-      <p><h2><a href='https://so.dang.cool/blog/'>
-        Boonie Pepper Bites
-      </a></h2></p>
-      <p>
-        Musings of J.R. "Boonie Pepper" Hill
-      </p>
+      <h2><a href='https://so.dang.cool/blog/'>
+        {{ title }}
+      </a></h2>
     </header>
 
     <hr>
