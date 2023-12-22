@@ -30,16 +30,16 @@
   "posts" filename push "/" join \source:
   filename drop-ext \html-filename:
   html-filename drop-ext
-  "-" split \deq 3 times unwords \title:
+  "-" split \deq 3 times unwords \post-title:
   \enq 2 times "-" join \date:
 
   ### Render the post ###
-  [ title date ] \do map " :: " join
+  [ post-title date ] \do map " :: " join
   source readf fill
   blog html-filename writef
 
   ### Return the list item for index ###
-  [ "  <li><a href='" html-filename "'>" date " :: " title "</a></li>" ] \do map
+  [ "  <li><a href='" html-filename "'>" date " :: " post-title "</a></li>" ] \do map
   "" join
 ] map
 sort rev unlines \posts:
