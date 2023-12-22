@@ -32,7 +32,7 @@
   html-filename drop-ext \post-name:
 
   ### Render the post ###
-  post-name
+  post-name as-title
   source readf fill
   blog html-filename writef
 
