@@ -11,13 +11,21 @@
 ] \fill def!
 
 
+### Site template ###
+
+"site.html.template" readf \site-template:
+[ [title main]: site-template fill ] \gen-page def!
+
+
+### Main pages ###
+
+"welcome"
+"index.html.part" readf
+gen-page "index.html" writef
+
 ### Blog ###
 
 "blog" cd
-
-"../site.html.template" readf \blog-template:
-
-[ [title main]: blog-template fill ] \blog def!
 
 # TODO: dirname/basename should be in dt
 [ "/" split last ] \basename def
@@ -41,7 +49,7 @@
   ### Render the post ###
   [ post-title date ] \do map " :: " join
   source readf fill
-  blog html-filename writef
+  gen-page html-filename writef
 
   ### Return the list item for index ###
   [ "  <li><a href='" html-filename "'>" date " :: " post-title "</a></li>" ] \do map
@@ -54,4 +62,4 @@ sort rev unlines \posts:
 
 "Boonie Pepper Bites" as-title
 [ "<ul>" posts "</ul>" ] [do "      " push rev "" join] map unlines
-blog "index.html" writef
+gen-page "index.html" writef
