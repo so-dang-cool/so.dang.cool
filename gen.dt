@@ -19,7 +19,7 @@
 
 ### Main pages ###
 
-"welcome"
+"Welcome"
 "index.html.part" readf
 gen-page "index.html" writef
 
