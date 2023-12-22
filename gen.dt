@@ -60,6 +60,6 @@ sort rev unlines \posts:
 
 ### Blog index ###
 
-"Boonie Pepper Bites" as-title
+"boonie pepper blog" as-title
 [ "<ul>" posts "</ul>" ] [do "      " push rev "" join] map unlines
 gen-page "index.html" writef
