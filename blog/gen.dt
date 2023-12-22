@@ -32,10 +32,9 @@
   html-filename drop-ext
   "-" split \deq 3 times unwords \title:
   \enq 2 times "-" join \date:
-  ["so.dang.cool"] title push date push " :: " join \post-name:
 
   ### Render the post ###
-  post-name post-title
+  [ title date ] \do map " :: " join
   source readf fill
   blog html-filename writef
 
