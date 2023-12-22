@@ -1,0 +1,35 @@
+#!/usr/bin/env dt
+
+[ "}}" split deq [code literal]:
+  code eval
+  literal push "" join
+] \fill-part def!
+
+[ "{{" split deq
+  \fill-part map enq
+  "" join
+] \fill def!
+
+"https://so.dang.cool/blog/rss.xml" \rss-url:
+"https://so.dang.cool/blog" \blog-url:
+"date --iso-8601=minute" exec lines first \updated-at:
+
+### entries ###
+
+"posts" cd ls ".." cd
+[".part" ends-with?] filter
+[".part" split first] map
+sort rev
+[ \filename:
+  blog-url filename push "/" join \post-url:
+  filename "." split first "-" split \deq 3 times unwords \title:
+  enq enq "-" join "T00:00:00-08:00" push "" join \published-at:
+
+  "rss-entry.xml.template" readf fill
+] map unlines
+lines ["" eq? not] filter
+unlines \entries:
+
+"rss.xml.template" readf
+fill
+"rss.xml" writef

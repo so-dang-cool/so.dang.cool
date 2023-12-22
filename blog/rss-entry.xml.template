@@ -1,0 +1,6 @@
+  <entry>
+    <title>{{ title }}</title>
+    <link href="{{ post-url }}" />
+    <updated>{{ updated-at }}</updated>
+    <published>{{ published-at }}</published>
+  </entry>

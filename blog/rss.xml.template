@@ -1,0 +1,12 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="https://dt.plumbing" version="{{ version }}">dt {{ version }}</generator>
+  <link href="{{ rss-url }}" rel="self" type="application/atom+xml"/>
+  <link href="{{ blog-url }}" rel="alternate" type="text/html"/>
+  <updated>{{ updated-at }}</updated>
+  <id>{{ rss-url }}</id>
+  <title>so.dang.cool :: boonie pepper blog</title>
+  <author>
+    <name>J.R. Hill</name>
+  </author>
+{{ entries }}
+</feed>

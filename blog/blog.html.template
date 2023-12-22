@@ -57,6 +57,7 @@
     <footer>
       <center>
         <p>2023, J.R. Hill</p>
+        <p><a href='https://so.dang.cool/blog/rss.xml'>RSS feed</a></p>
         <p><em>
           Generated with <a href='https://dt.plumbing'">dt</a>
           (<a href='https://github.com/so-dang-cool/so.dang.cool/tree/core/blog'>source</a>)
