@@ -31,8 +31,8 @@ jobs:
       
       - name: Generate blog (with dt)
         run: |-
+          gen.dt
           cd blog
-          ./gen.dt
           ./gen-rss.dt
 
       - name: Setup mdBook
