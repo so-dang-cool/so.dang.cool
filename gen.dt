@@ -15,7 +15,7 @@
 
 "blog" cd
 
-"blog.html.template" readf \blog-template:
+"../site.html.template" readf \blog-template:
 
 [ [title main]: blog-template fill ] \blog def!
 
