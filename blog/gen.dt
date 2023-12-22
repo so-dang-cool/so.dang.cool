@@ -40,7 +40,7 @@
   blog html-filename writef
 
   ### Return the list item for index ###
-  [ "  <li><a href='" html-filename "'>" post-name "</a></li>" ] \do map
+  [ "  <li><a href='" html-filename "'>" date " :: " title "</a></li>" ] \do map
   "" join
 ] map
 sort rev unlines \posts:
