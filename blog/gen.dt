@@ -20,6 +20,9 @@
 [ "." split pop drop "." join ] \drop-ext def
 
 [ "so.dang.cool ::" push rev unwords ] \as-title def
+[ "-" split \deq 3 times unwords \title:
+  \enq 2 times "-" join \date:
+  ["so.dang.cool"] title push date push " :: " join ] \post-title def
 
 
 ### Blog posts ###
@@ -32,7 +35,7 @@
   html-filename drop-ext \post-name:
 
   ### Render the post ###
-  post-name as-title
+  post-name post-title
   source readf fill
   blog html-filename writef
 
