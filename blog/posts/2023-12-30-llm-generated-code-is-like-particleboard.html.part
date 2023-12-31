@@ -1,0 +1,213 @@
+<h1>LLM-generated code is like Particleboard</h1>
+
+<p>
+  The hype around LLM-generated code has been <em>extreme</em> in 2023.
+  Chat GPT made its waves, and improvements in LLM models and products like
+  GitHub Copilot (there are now many) have stopped being speculative and have
+  started being normalized as tools in software engineering.
+</p>
+
+<p>
+  Personally, I've had an aversion to LLM-generated code, and it's taken me
+  a few months to think through. I've spent time challenging my assumptions and
+  talking to the true believers, and getting hands on.
+</p>
+
+<h2>Carpentry</h2>
+
+<p>
+  Before I was a software engineer, I was a lot of things. I'm a highschool
+  dropout, and while I wouldn't recommend this path to anyone, it certainly is
+  a way to almost guarantee blue collar work experience.
+</p>
+
+<p>
+  Among other things, I spent some time as a general contractor, and did some
+  carpentry. Carpentry is when you build large structures. You tend to care
+  about things like what's load bearing, or how long and thick a beam should be
+  to support a second floor or a roof.
+</p>
+
+<p>
+  In my experience working at AWS, carpentry has a bit in common with creating
+  larger software systems. Now, carpentry can be used to make large structures
+  like mansions or something much smaller like a shed or a dog house. Likewise,
+  large software systems can be used to make grand marvels of engineering like
+  "the cloud" and its myriad of compute and data abstractions, and also
+  relatively small APIs that can send you a cat image.
+</p>
+
+<h2>Woodworking</h2>
+
+<p>
+  Fast forward a decade-ish, and I was a FAANG software engineer buying a home
+  and starting a family. In a little workshop out in our backyard, I started up
+  a hobby I had put on hold while living in big city apartments: woodworking.
+</p>
+
+<p>
+  Woodworking is not carpentry. This is when you make things like furniture,
+  maybe sort-of large like a bookshelf or much smaller like a music box. My
+  personal interest is in Japanese woodworking: using fine hand tools like
+  chisels and planes, and creating very exact joints that don't require nails
+  or screws. Woodworking more generally allows for many mediums in a finished
+  product, like nails and screws, but also things you might not associate with
+  wood, like upholstery padding and fabrics.
+</p>
+
+<p>
+  Woodworking is more like creating a user-facing application. Something
+  technically smaller, like a web page, an application for a mobile device or
+  a PC desktop application. Just maybe the software is for a consumer device.
+  The differences are in the scale of the production. A web page, rendered in a
+  browser on a client's unforeknowable OS and hardware, is not necessarily less
+  of an undertaking as the backend that may be behind it, but it's a more
+  "tangible" thing. It's less likely to live in a system with multiple points
+  that bear a load and collaborate, and more likely to be directly handled by a
+  user. Not better or worse, but there are differences in what gets valued at
+  by the users and by the producers.
+</p>
+
+
+<h2>Wood, Manufactured Wood, Code, and LLM-code</h2>
+
+<p>
+  Most carpentry is performed with natural wood, and where I come from most
+  houses are made mostly of wood and some plywood. Most load-bearing
+  applications are pure natural wood. You'll also see plywood used structurally
+  for the floor under your flooring and the roof under your shingles.
+</p>
+
+<p>
+  Natural wood is usually cut in big long hunks of "dimensional lumber," like a
+  "two-by-four", which of course, measures 1.5 inches by 3.5 inches. Plywood is
+  produced by cutting large wood sheets <em>around</em> the core of a tree, and
+  multiple sheets are glued together at alternating 90 degree angles. This
+  produces a wood medium that's less affected by seasonal growing and shrinking
+  as the moisture content of air changes. Plywood also can cover much more area
+  than you could ever cut out of even large trees, and has a lot more strength
+  than wood joined in many other ways.
+</p>
+
+<p>
+  Most woodworking is performed with natural wood, but where I come from most
+  "wood" furniture is partially or completely composed of manufactured wood
+  products. In short, most wood furniture does not even come from woodworking.
+  I don't know all the ins and outs of the furniture business, but the going
+  price right now for a low-end solid oak end table, the kind of small table
+  you'd put by your bedside, is more than $100. Meanwhile, the going price for
+  IKEA's famous LACK end table, comprised mostly of particleboard, is now $13.
+  Both are made from wood, but one is going to cost more and last for more than
+  one generation, and the other will ultimately be disposed of... but not at
+  any great loss.
+</p>
+
+<p>
+  Particleboard is a material that's made from particles of wood that've been
+  glued and pressed together. It's cheap; it's sawdust. Multiple pieces of
+  particleboard can be assembled just like natural wood (or plywood) at a
+  fraction of the cost. Particleboard is not <em>bad</em>; it offers a valuable
+  trade-off that you might have already literally bought into. A much lower
+  cost when you don't require durability. There are also some cousins here with
+  higher cost and better properties like MDF and OSB but I'll stick with
+  particleboard for my analogy.
+</p>
+
+<p>
+  Now, I have owned a LACK end table. It's a functional little table, it holds
+  stuff on its surface, and it was great on a budget. I liked it. I also still
+  own furniture like bookshelves and cabinets and pantries that are made from
+  non-solid wood like particleboard or stronger variants of the same idea like
+  MDF. These have the same rough tradeoff, they're cheaper than the big grand
+  alternatives, but they aren't going to be incredibly durable and I might
+  replace the stuff made of slabs or sawdust later in life. (Or, maybe not)
+</p>
+
+<p>
+  LLM-generated code is like particleboard, while hand-written code is like
+  natural solid wood.
+</p>
+
+<ul>
+  <li>
+    LLM-generated code is much cheaper to produce than hand-written code.
+  </li>
+  <li>
+    LLM-generated code is suitable for mass-production. The <em>production</em>
+    of hand-written code does not scale well. (See: Fred Brooks, <em>The
+	Mythical Man Month</em>, chapter 1, and all other chapters)
+  </li>
+  <li>
+    Just like an IKEA table is easy for a novice to construct, LLM-generated
+	code is easy for a novice to assemble. Woodworking with solid wood requires
+	skills that can only be grown over time with hands-on experience, and the
+	same goes for hand-written code.
+  </li>
+  <li>
+    LLM-generated code is not suitable for fine craftsmanship. Hand-written
+	code is required for fine craftsmanship.
+  </li>
+</ul>
+
+<p>
+  And while I'm at it, let me tease out a few more fun similarities.
+</p>
+
+<p>
+  There's nothing that will prevent an expert woodworker from a tasteful use of
+  some manufactured wood byproduct, for something like the back of a dresser,
+  in an otherwise meticulous project. Likewise there's nothing that should
+  prevent an expert software craftsman from using LLM-generated code in parts
+  of a project that aren't visible and the quality doesn't matter as much as
+  the function. (Especially exploratory tasks of a software project that don't
+  need to be included in a final product.) In both cases, this can be used to
+  drive the cost of a project down for some part that doesn't matter.
+</p>
+
+<p>
+  Particleboard makes sense in smaller, non-load-bearing applications, which is
+  the domain where fine woodworking also happens. No one builds a house with
+  particleboard. Well, at least you can't use it to bear a load. There are a
+  few applications for particleboard in carpentry, but it's not going to hold
+  up a second story. Likewise, you might find a few places where you could use
+  LLM-generated code to speed up the production or lower the cost of a large
+  software system, but something larger is going to have constraints on the
+  qualities like speed, scale, and correctness it must provide. An online FPS
+  game can't afford to be laggy. S3 can't afford to be out of space. A bank
+  can't afford to just be "usually accurate" with withdrawals and deposits.
+  These kind of requirements drive back to hand-written software.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+  LLM-generated code is for creating software quickly and cheaply. It's for
+  mass-producing parts of software that can be assembled into something working
+  good enough. If and when it breaks, you don't spring for an expensive repair
+  job (like you might for a family heirloom) you just generate a replacement;
+  the equivalent of going to IKEA and buying another $13 end table.
+</p>
+
+<p>
+  Despite my early gut-drivent resistence for LLM-generated code, after
+  reflecting I can't deny the value it's bringing and will continue to bring.
+  Just like particleboard, I'll have some of this stuff in my house, and I
+  might not even notice it.
+</p>
+
+<p>
+  That said... my personal inclination is towards working with my own hands,
+  and when it comes to software I prefer making higher-quality and durable
+  products. In my experience, the software industry's demands are not for
+  high-quality code, it's for mass-produced code. A software project should
+  have quality controls like tests and lints these days, but these are not for
+  quality reasons so much as for productivity reasons.
+</p>
+
+<p>
+  Anyway, I wish all you future prompt engineers the best. I've benefitted from
+  mass-produced physical products in my life, and I suspect I'll also benefit
+  from mass-produced software products too. As for my own software... I plan to
+  (mostly) continue writing it by hand.
+</p>
+
