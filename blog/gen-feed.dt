@@ -12,7 +12,7 @@
 
 "https://so.dang.cool/blog/feed.xml" \feed-url:
 "https://so.dang.cool/blog" \blog-url:
-"date --iso-8601=minute" exec lines first \updated-at:
+"date -Iminutes" exec lines first \updated-at:
 
 ### entries ###
 
