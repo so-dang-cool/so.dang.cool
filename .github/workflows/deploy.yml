@@ -33,7 +33,7 @@ jobs:
         run: |-
           ./gen.dt
           cd blog
-          ./gen-rss.dt
+          ./gen-feed.dt
 
       - name: Setup mdBook
         uses: peaceiris/actions-mdbook@v1
