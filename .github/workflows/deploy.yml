@@ -31,7 +31,7 @@ jobs:
 
       - name: Make a git clone
         run: |-
-          git clone --bare . site.git
+          git clone --bare ./.git site.git
       
       - name: Generate site with dt scripts
         run: |-
