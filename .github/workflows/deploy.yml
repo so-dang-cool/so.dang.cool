@@ -28,6 +28,10 @@ jobs:
 
       - name: Setup rtx
         uses: jdx/rtx-action@v1
+
+      - name: Make a git clone
+        run: |-
+          git clone --bare . site.git
       
       - name: Generate site with dt scripts
         run: |-
