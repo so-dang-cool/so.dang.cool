@@ -6,22 +6,35 @@
       </p>
 
       <p>
-        I also code for work. My longest-running gig in the software industry was at Amazon Web
-        Services between 2014 and 2023. I'm working on <a href="/gigs/">documenting my professional
-        work here</a>.
+        My longest-running gig in the software industry was 9 years at Amazon
+        between 2014 and 2023. I was a core maintainer of the company's
+        internal software ecosystem. I owned, personally as a single engineer,
+        tens of thousands of software projects (libraries, daemons, templates,
+        executables, etc) used directly and transitively by AWS, Amazon.com,
+        MGM, Twitch, Kindle, Audible, IMDB, Comixology, Whole Foods, Zappos,
+        and more. Applications ranged from the web, fintech, adtech, embedded
+        and IoT, consumer devices, avionics, robotics, satellites and more. I'm
+        not a rocket scientist, but my code has been to space.
       </p>
 
-      <p>The following works are ordered roughly by the level of interest I've seen.</p>
+      <p>
+        The rest of this page is dedicated to non-proprietary work.
+      </p>
 
+      <br>
+      <hr>
+      <h1 id='works' class='center'>Software</h1>
+      
+      <p>
+        The following personal works are ordered roughly by the level of
+        interest I've seen.  
+      </p>
       <p>
         Projects with a + after the year are projects that I actively think about and work on.
         Projects without a + after the year are relatively stable; I may still make an occasional
         update, but I'm not thinking about them or planning more work for them.
       </p>
       
-      <br>
-      <hr>
-      <h1 id='works' class='center'>Software</h1>
       <hr>
 
       <h2 class='center'>Tools & Languages</h2>
