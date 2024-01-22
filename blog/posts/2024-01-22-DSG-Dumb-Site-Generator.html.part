@@ -1,7 +1,15 @@
 <h1>The DSG</h1>
 
 <p>
-  My home site is generated using a <em>Dumb Site Generator</em> pattern. (I'll
+  Make your own static site generator in less than 100 lines of code.
+</p>
+
+<p><em>
+  (Or clone a template and hack it up how you like.)
+</em></p>
+
+<p>
+  This site is generated using a <em>Dumb Site Generator</em> pattern. (I'll
   explain...) Mine is 65 lines of <a href='https://dt.plumbing'>dt</a> source
   code. The language is early and a bit rough. If you're interested, take a
   look at <a href='https://github.com/so-dang-cool/so.dang.cool'>the sources</a>.
@@ -140,7 +148,33 @@
 
 <h2>Get Started</h2>
 
-<p>Find (and share!) DSG templates, example sites, and articles here:</p>
+<p>
+  The canonical example and starting point template I'll recommend is this
+  no-dependency DSG that uses only POSIX utilities. You don't even need bash or
+  zsh.
+</p>
+
+<ul>
+  <li><a href='https://booniepepper.github.io/dsg-posix'>
+    The Site
+  </a></li>
+  <li><a href='https://github.com/booniepepper/dsg-posix'>
+    Its Sources
+  </a></li>
+</ul>
+
+<p><em>
+  Note: If you clone the template and choose to host it on GitHub Pages,
+  <a href='https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow'>
+  enable the workflow</a> that's included with the project. You may need to
+  manually run it the first time from the repository's "Actions" if it ran and
+  failed due to permissions.
+</em></p>
+
+<p>
+  For more DSG options in programming languages and markup languages, find (and
+  please share!) DSG templates, example sites, and articles here:
+</p>
 
 <ul>
   <li><a href='https://github.com/so-dang-cool/awesome-dsg'>
