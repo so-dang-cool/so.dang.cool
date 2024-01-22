@@ -1,0 +1,153 @@
+<h1>The DSG</h1>
+
+<p>
+  My home site is generated using a <em>Dumb Site Generator</em> pattern. (I'll
+  explain...) Mine is 65 lines of <a href='https://dt.plumbing'>dt</a> source
+  code. The language is early and a bit rough. If you're interested, take a
+  look at <a href='https://github.com/so-dang-cool/so.dang.cool'>the sources</a>.
+</p>
+
+<p>
+  I liked the pattern, so I wrote a few more example static site generators as
+  GitHub template repositories. Each is less than 100 lines of code. I'll
+  explain what I'm up to first. The examples are at the end.
+</p>
+
+<h2>DSG - The Dumb Site Generator</h2>
+
+<p>
+  The distilled form of DSG is to lay out a website like this:
+</p>
+
+<ul>
+  <li>index.html <em>(home page)</em></li>
+  <li>style.css</li>
+  <li>blog/
+    <ul>
+      <li>index.html <em>(post listing page)</em></li>
+      <li>2024-01-21-Some-post-title.html</li>
+      <li>...more posts</li>
+    </ul>
+  </li>
+</ul>
+
+<p>
+  And we generate that from sources laid out like this:
+</p>
+
+<ul>
+  <li><em>generator script</em></li>
+  <li>site.html.template</li>
+  <li>index.html.part (optional)</li>
+  <li>style.css</li>
+  <li>blog/
+    <ul>
+      <li>2024-01-21-Some-post-title.html.part</li>
+      <li>...more posts</li>
+    </ul>
+  </li>
+</ul>
+
+<p>
+  site.html.template is the common header and footer content for all pages. The
+  "ETC.part" files are partials. In the most basic uses of DSG, the content for
+  the index.html page may be short enough that there is no need for a separate
+</p>
+
+<p>
+  The style.css is static css with no processing. It's intended to be linked
+  from the site.html.template.
+</p>
+
+<p>
+  The "generator script" is some minimal script that does the following:
+</p>
+
+<ol>
+  <li>
+    Render a home page. This uses the site.html.template and inserts a title
+    and the home page content. If the content is extensive, move it to an
+    index.html.part file.
+  </li>
+  <li>
+    Render each blog post. Use the site.html.template file and insert the title
+    (from the filename) and the post content.
+  </li>
+  <li>
+    Render a page listing and linking each blog post. If the post filenames are
+    formatted as described below, a simple lexical sort can put them all in
+    order.
+  </li>
+</ol>i
+
+<p>
+  If you can't get this done in your language in less than 100 lines of code,
+  something is probably going wrong. Ask somebody for help!
+</p>
+
+<p>
+  The posts intentionally bake the date, title, and source format into the
+  filename. The purest form of DSG will use just HTML. The "part" part is
+  short for "partial." Blog post filenames follow this naming format:
+</p>
+
+<pre>
+  {YYYY-MM-DD}-{The-post-title}.{EXT}.part
+</pre>
+
+<p>
+  By default, DSG uses html as the pre-processing markup language. Lots of
+  people like to dog on HTML, and some even have valid points like
+  <a href='https://www.youtube.com/watch?v=FvmTSpJU-Xc&t=1081s'>Alan Kay</a>,
+  but HTML has remained the dominant markup language of the web for more than
+  30 years, so I'll assert it's a safe bet for a website.
+</p>
+
+<h2><em>Your</em> DSG?</h2>
+
+<p>
+  DSG is a very basic pattern with lots of opinions on everything. It's for the
+  DIY crowd, so the idea is <em>NOT</em> that this is an optimal website layout.
+  The idea is that this is going to be doing almost everything a basic website
+  will need, and you can take the DSG idea (from a template?) and shape it into
+  whatever you <em>really</em> want.
+</p>
+
+<p>
+  In other words, the DSG is like a seed. A do-it-yourselfer can take as a
+  starting point, and nurture it over time into something more organic and
+  personal. Or don't take a DSG at all, but just look at it and how it works
+  and use that as inspiration that <em>you</em> can do this on your own.
+</p>
+
+<p>
+  Prefer some other format? Markdown, AsciiDoc, reStructuredText? Add that in.
+  Prefer more page types, more templates, or a different layout? You got this.
+  Go make a website without worrying about details of a website framework.
+</p>
+
+<h2>Quick Aside</h2>
+
+<p>
+  With DSG I'm <em>NOT</em> trying to make any kind of statement about other
+  static site generators. They are just for a different audience than the DIY
+  kinda folks that this is for.
+</p>
+
+<p>
+  I've used a number of other SSGs, and fiddlier things like React, Vue, and
+  Angular. I've been at this game for a while and have also used older things
+  like WordPress, SharePoint, and Dreamweaver, and also more exotic things.
+  None of these are quite what I want for my own simple sites, so I'm just
+  going to make my own stuff and tailor it over time to the site.
+</p>
+
+<h2>Get Started</h2>
+
+<p>Find (and share!) DSG templates, example sites, and articles here:</p>
+
+<ul>
+  <li><a href='https://github.com/so-dang-cool/awesome-dsg'>
+    Awesome DSG
+  </a></li>
+</ul>
