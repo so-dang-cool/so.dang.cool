@@ -181,3 +181,13 @@
     Awesome DSG
   </a></li>
 </ul>
+
+<h2>Updates</h2>
+
+<ul>
+  <li>
+    A friend informed me I'm not the first person to make a POSIX shell static
+    site generator. Credit on being first goes to
+    <a href='https://romanzolotarev.com/ssg.html'>Roman Zolotarev's SSG</a>.
+  </li>
+</ul>
