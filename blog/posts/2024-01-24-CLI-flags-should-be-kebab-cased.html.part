@@ -1,0 +1,78 @@
+<p>
+  This will be an obvious convention to anyone with even a passing familiarity
+  with any (non-Windows) computer, but CLI flags should be kebab-cased.
+</p>
+
+<pre>
+# kebab case
+mycli --my-flag foo
+</pre>
+
+<p>
+  If you have spent any time in a terminal, if you are at all familiar with how
+  nearly all software has been designed (most software is not GUI software), if
+  you have spent anything more than 10 minutes exploring the UI/UX of command-line
+  software, you know this is true.
+</p>
+
+<p>
+  In fact, this convention is so <em>assumed</em> to not require elaboration
+  that the <a href='https://clig.dev/#arguments-and-flags'>CLIG's section on
+  arguments and flags</a> doesn't seem to even feel the need to specify it, but
+  simply uses the convention in all the examples it provides.
+</p>
+
+<p>
+  One way this gets broken is with what I'll call "smushcase" flags:
+</p>
+
+<pre>
+# smushcase
+mycli --myflag foo
+</pre>
+
+<p>
+  This is where you smush all the letters together. You'll see it occasionally,
+  and it makes zero sense, but you can't undo these kind of things without
+  breaking the whole world. If you care about saving space so much that you'll
+  omit intermediate dashes... just define a single-character flag.
+</p>
+
+<p>
+  The worse way I've seen this unwritten rule broken is a "camelCase"
+  abomination. Not only do you see the senselessness of smushcase, but you
+  introduce the equivalent number of keystrokes (but now there are chords!)
+  for just a slightly less readable, harder-to-type, carpal-tunnel-inducing
+  version of the kebab-case equivalent. You also get the added cognitive
+  overhead and micro-toil of guessing/trying whether it's case-insensitive
+  and allows "smushcase" anyway.
+</p>
+
+<pre>
+# camelCase
+mycli --myFlag foo
+</pre>
+
+<p>
+  Thankfully I've seen this very rarely. The place I saw it most prevalent was
+  in Amazon's Builder Tools products. Many of these are hardened into time and
+  baked into the ecosystem so deeply they can't be changed. Their continued
+  <em>use</em> can be forgiven, chalked up to an unfortunate history that began
+  decades ago with Perl-based conventions.
+</p>
+
+<p>
+  More worryingly is that some parts of Amazon can be so inbred, so isolated
+  from the outside world, and so disconnected from 70 years of software and its
+  conventions, that the pattern continues in Amazon internal products.
+</p>
+
+<p>
+  Thankfully, this seems to have not infected the AWS CLI or other developer
+  products. That can be considered a dodged bullet, as tools like these
+  influence the industry.
+</p>
+
+<p>
+  <em>&lt;/rant&gt;</em>
+</p>
