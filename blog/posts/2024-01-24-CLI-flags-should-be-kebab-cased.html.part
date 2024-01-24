@@ -1,6 +1,7 @@
 <p>
   This will be an obvious convention to anyone with even a passing familiarity
-  with any (non-Windows) computer, but CLI flags should be kebab-cased.
+  with any (non-Windows) computer, but CLI flags with multiple words should be
+  kebab-cased.
 </p>
 
 <pre>
@@ -75,4 +76,21 @@ mycli --myFlag foo
 
 <p>
   <em>&lt;/rant&gt;</em>
+</p>
+
+<hr>
+
+<p>
+  P.S. If there is any option at all for a single word, use a single word.
+  Naming is hard work; do that work, and
+  <a href='https://www.youtube.com/watch?v=c5QF2HjHLSE&t=289s'>choose good
+  words</a>.
+</p>
+
+<p>
+  P.P.S. Use a single dash for single character flags. Use two dashes for
+  anything longer. Read the rest of the CLIG, 12-Factor CLIs, and also just use
+  some CLIs. <a href='https://www.youtube.com/watch?v=IcV9TVb-vF4'>CLI Tools
+  are not inherently user-hostile</a>, so if your tool <em>is</em> user-hostile
+  it's not the fact that it's a CLI, it's the design and implementation.
 </p>
