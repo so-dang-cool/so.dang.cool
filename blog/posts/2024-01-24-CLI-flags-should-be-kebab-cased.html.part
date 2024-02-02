@@ -63,9 +63,10 @@ mycli --myFlag foo
 </p>
 
 <p>
-  More worryingly is that some parts of Amazon can be so inbred, so isolated
-  from the outside world, and so disconnected from 70 years of software and its
-  conventions, that the pattern continues in Amazon internal products.
+  More worryingly is that some parts of Amazon can be so inbred<sup>[1]</sup>,
+  so isolated from the outside world, and so disconnected from 70 years of
+  software and its conventions, that the pattern continues in Amazon internal
+  products.
 </p>
 
 <p>
@@ -93,4 +94,21 @@ mycli --myFlag foo
   some CLIs. <a href='https://www.youtube.com/watch?v=IcV9TVb-vF4'>CLI Tools
   are not inherently user-hostile</a>, so if your tool <em>is</em> user-hostile
   it's not the fact that it's a CLI, it's the design and implementation.
+</p>
+
+<hr>
+
+<p>
+  [1] I use inbred here as a biological analogy. Unlike humans, most animals,
+  plants, and fungi rarely avoid inbreeding. While it can lead to genetic
+  disorders, it more generally leads to the propagation of traits.
+</p>
+
+<p>
+  In Amazon, I saw the propagation of both desirable and undesirable traits.
+  The weird trait described above is a genetic disorder that's propagating.
+  This post is not meant to imply Amazonians lack positive traits. Most
+  Amazonians I met displayed sincere care for customers and an amazing work
+  ethic. They also tended to be humble and open to feedback, and just generally
+  very smart people.
 </p>
