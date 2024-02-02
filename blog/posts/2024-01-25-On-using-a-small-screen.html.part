@@ -1,0 +1,79 @@
+<p>
+  I tend to use a very minimal toolset when working with software. The reaction
+  I get from other software engineers ranges on a scale from disgust to awe.
+</p>
+
+<p>
+  That doesn't mean I won't use <em>Very Large Software (VLS)</em> because I
+  have and will. I even was the owner of Gradle and JetBrains integrations at
+  Amazon for a while, with tens of thousands of users. Gradle longer than
+  JetBrains. I didn't invent or revolutionize anything with these VLS offerings
+  but it did meet people at their preferences.
+</p>
+
+<p>
+  The broad preferences of the software engineer pop culture where I'm from
+  looks something like this:
+</p>
+
+<ul>
+  <li>Multiple monitors, or a very large curved monitor</li>
+  <li>An Apple laptop</li>
+  <li>
+    Apple peripherals, each with the <em>appearance of minimalism</em> (but
+    inevitably: a mess of cables and dongles everywhere)
+  </li>
+  <li>
+    Mac OSX is a development <em>platform</em>, but the target is often either
+	a browser or a Linux container with some level of.
+  </li>
+  <li>
+    Some top-20 programming language with a preference this decade for gradual
+    typing, primarily to assist an IDE-assisted programming workflow
+  </li>
+  <li>
+    Some popular IDE that's standard for the language. Maybe something like
+    VS Code <em>(and an electron application can be considered a "light" tool
+	these days!)</em> or a JetBrains IDE, or something that's tightly related to
+	an operating system like Xcode or Visual Studio.
+  </li>
+</ul>
+
+<p>
+  Now, this is not bad, and it might be the cost of doing software at all in
+  your context. I don't think anyone should feel ashamed for being in the
+  status quo. Some of the details will change over time: the baton has passed
+  from Apple to Microsoft and back to Apple for hosting most software
+  developers.
+</p>
+
+<p>But... this it's also just not my style.</p>
+
+<p>
+  I like a small screen and a dumb text editor. I don't just think this is an
+  aesthetic choice, but a choice I've come to appreciate for more practical
+  reasons.
+</p>
+
+<p>
+  It's very difficult to work on a modern software project without an IDE. You
+  need to be able to reconcile a complex call graph, at multiple levels of
+  abstraction, through multiple source files, maybe even through multiple
+  source repositories and projects, each written by an every-changing cast
+  of contributors that might not have a full picture of the project.
+</p>
+
+<p>
+  When I work on a small screen, that sort of project doesn't work very well.
+  This gives me an incentive to simplify.
+</p>
+
+<p>
+  <a href='/bookshelf/In%20the%20Beginning%20was%20the%20Command%20Line%20-%20Neal%20Stephenson.pdf'>
+  Neal Stephenson once made an analogy</a> that Apple and Microsoft operating
+  systems are like cars you can buy from dealerships, and Linux is more like a
+  tank that you can get for free.
+</p>
+
+<p>
+  It's
