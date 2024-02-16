@@ -17,8 +17,8 @@
 ### entries ###
 
 "posts" cd ls ".." cd
-[".part" ends-with?] filter
-[".part" split first] map
+[".html.part" ends-with?] filter
+[".html.part" split first] map
 sort rev
 [ \filename:
   blog-url filename push "/" join \post-url:

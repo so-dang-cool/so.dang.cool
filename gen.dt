@@ -19,9 +19,15 @@
 
 ### Main pages ###
 
-"Welcome"
-"index.html.part" readf
-gen-page "index.html" writef
+ls
+  [ ".html.part" ends-with? ] filter
+  [ \partial:
+    partial ".html.part" split first
+    "." split pop \page:
+    "." join "-" split unwords \title:
+    title   partial readf   gen-page
+    page "html" push "." join   writef
+  ] each
 
 ### Blog ###
 
@@ -38,21 +44,21 @@ gen-page "index.html" writef
 ### Blog posts ###
 
 "posts" cd ls ".." cd
-[ ".part" ends-with? ] filter
+[ ".html.part" ends-with? ] filter
 [ \filename:
   "posts" filename push "/" join \source:
-  filename drop-ext \html-filename:
-  html-filename drop-ext
-  "-" split \deq 3 times unwords \post-title:
+  filename drop-ext drop-ext \filepath:
+  filepath "-" split \deq 3 times unwords \post-title:
   \enq 2 times "-" join \date:
 
   ### Render the post ###
   [ post-title date ] \do map " :: " join
-  source readf fill
-  gen-page html-filename writef
+  source readf fill   gen-page
+  "mkdir -p" filepath push unwords exec drop
+  filepath "index.html" push "/" join   writef
 
   ### Return the list item for index ###
-  [ "  <li><a href='" html-filename "'>" date " :: " post-title "</a></li>" ] \do map
+  [ "  <li><a href='" filepath "'>" date " :: " post-title "</a></li>" ] \do map
   "" join
 ] map
 sort rev unlines \posts:

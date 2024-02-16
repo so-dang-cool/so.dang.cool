@@ -24,7 +24,7 @@
 <h2>DSG - The Dumb Site Generator</h2>
 
 <p>
-  The distilled form of DSG is to lay out a website like this:
+  The distilled form of DSG is to lay out website files like this:
 </p>
 
 <pre>
@@ -32,9 +32,9 @@
 ├── index.html
 ├── style.css
 └── blog
-    ├── 2024-01-01-Some-post-title.html
+    ├── 2024-01-01-Some-post-title/index.html
     ├── ...more posts
-    └── index.html
+    └── index.html (list)
 </pre>
 
 <p>
@@ -45,10 +45,11 @@
 .
 ├── gen.script
 ├── site.html.template
-├── index.html.part (optional)
+├── Welcome.index.html.part
+├── ...more pages
 ├── style.css
 └── blog
-    ├── 2024-01-01-Some-post-title.html.part
+    ├── 2024-01-01.Some-post-title.html.part
     └── ...more posts
 </pre>
 
@@ -69,9 +70,9 @@
 
 <ol>
   <li>
-    Render a home page. This uses the site.html.template and inserts a title
-    and the home page content. If the content is extensive, move it to an
-    index.html.part file.
+    Render pages. They should be in the format: <pre>{Page-Title}.{filename}.{EXT}.part</pre>
+    with dashes substituted as spaces. <em>(Hack on it! If you prefer another
+    delimiter, do it. Same goes for everything else)</em>
   </li>
   <li>
     Render each blog post. Use the site.html.template file and insert the title
