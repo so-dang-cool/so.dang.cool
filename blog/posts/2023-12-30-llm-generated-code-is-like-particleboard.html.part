@@ -210,3 +210,21 @@
   (mostly) continue writing it by hand.
 </p>
 
+<hr>
+
+<p>Additional resources: <em>(last updated 2024-02-20)</em></p>
+
+<ul>
+  <li>
+    LLM-generated code makes you about twice as fast.
+    <a href='https://visualstudiomagazine.com/articles/2022/09/13/copilot-impact.aspx'>
+      A Year In, GitHub Measures AI-Based Copilot's Productivity Boost
+    </a>, David Ramel 2022
+  </li>
+  <li>
+    LLM-generated code doubles code churn.
+    <a href='https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality'>
+      Coding on Copilot: 2023 Data Suggests Downward Pressure on Code Quality
+    </a>, GitClear whitepaper, 2024
+  </li>
+</ul>
