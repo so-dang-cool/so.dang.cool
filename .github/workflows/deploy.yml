@@ -26,8 +26,8 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
-      - name: Setup rtx
-        uses: jdx/rtx-action@v1
+      - name: Setup mise
+        uses: jdx/mise-action@v2
 
       - name: Make a git clone
         run: |-
