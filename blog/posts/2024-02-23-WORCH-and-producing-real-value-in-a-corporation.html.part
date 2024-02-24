@@ -1,0 +1,192 @@
+<p>
+  In 2014, at age 29, this highschool dropout finally landed his first salaried
+  role (unless you count the USMC) at AWS as a Technical Customer Support
+  Associate. "Help my website is down." and "I thought this was the free tier,
+  why was I charged?" were the unending refrains of AWS Support when I joined.
+</p>
+
+<p>
+  Issuing a refund was done often, and the interface was painful.
+</p>
+
+<p>
+  An AWS bill is lines upon lines of tiny charges, every billable dimension is
+  calculated to six significant digits of fractions of pennies. Even for the
+  college student who leaves an EC2 instance running after school-provided
+  credits are consumed rakes up EC2 charges, EBS charges, EIP charges, and
+  plenty of "Data Transfer Out" for all sorts of region-to-region traffic.
+</p>
+
+<p>
+  This level of accuracy at the scale AWS operates is commendable. Invoices are
+  simplified for users; while they can dig down into the details, the primary
+  presentation and transactions will be performed with one aggregate
+  dollars-and-cents charge. (Or similar for other currencies.)
+</p>
+
+<p>
+  In 2014, invoices were <em>not</em> simplified for the refund processor. The
+  interface to perform a refund was something like a spreadsheet in a web
+  browser, except you couldn't select cells to copy/paste values. This meant
+  the act of issuing a refund was time consuming, since every agent for every
+  refund action had to type out, accurately, some amount of charges down to six
+  significant digits. Partial refunds would require math. Typos might result in
+  multiple refund transactions.
+</p>
+
+<p>
+  There were also rules from each AWS service's product team on what is ok to
+  refund with no-questions-asked, versus what needs escalation and approvals.
+  For the support agent, this might mean the accounting gets complicated, and
+  allocating refunds to different charge types may require following different
+  rules. It also introduces more room for human error: refunding against the
+  wrong service, and not being able to catch it in a sea of dozens of line
+  items.
+</p>
+
+<p>
+  Then of course, there were problems that were more basic. If a concierge
+  agent (a higher-level AWS support agent) was performing some large refund
+  action for a corporation, it may involve dozens or hundreds of lines. This
+  starts to introduce problems like tying up a high-value employee for a very
+  long time, or the refund request itself timing out because it's too large.
+</p>
+
+<p>
+  To add to all this, at the time we performed <em>a lot</em> of refunds. Some
+  of this was because AWS was still finding itself as a company, and still
+  fleshing out the billing model. Some bills were surprising. The terms of what
+  "free tier usage" consisted of varied by product, and often had dense or
+  confusing language. The ability to calculate some prediction of usage was
+  limited.
+</p>
+
+<p>
+  As a programming hobbyist at the time, I saw a clear opportunity to simplify
+  the whole process. I proposed and then wrote up a Greasemonkey script in a
+  couple weeks that I called "WORCH." The first letters were related to the
+  weird Ext.js spreadsheet web tool's name, and the last three are "Refund
+  Charges Helper." It was a fun and weird project that involved far more reverse
+  engineering than anything I had done up to that point in time. It was also the
+  first time I had to learn about floating point number math, and I implemented
+  my own string-based-decimal-math library to eliminate rounding errors.
+</p>
+
+<p>
+  I wrote it up, CS Leads helped get it tested, and it worked. That refund
+  process that used to take minutes was now down to seconds. You could apply
+  dollar amounts to individual services, click a button, and the helper would
+  figure out how to break down that dollar amount down through all the various
+  line items in an invoice. For small bills, you could just "refund all," and
+  often delight a customer with a refund before they even finished describing
+  their situation. For those larger concierge refunds that could take hours,
+  sometimes even more than a day, they suddenly also took seconds or minutes.
+</p>
+
+<p>
+  Everyone was pretty happy. I did the math at the time on the number of refund
+  cases we handled, the average handling time, and the average salary of the
+  Technical Customer Support Associates, and it (very conservatively) saved
+  more than $1,000,000.00 in operating costs in that first year alone. I had my
+  leadership double-check the math, and I also didn't include concierge or
+  other specialists in the calculations.
+</p>
+
+<p>
+  The weird Ext.js web tool for issuing refunds (among other things) never
+  incorporated my changes, but its replacement took the feature as requirements
+  and they continue to live on today.
+</p>
+
+<p>
+  What I didn't come to appreciate until about a decade later, is that solving
+  this kind of problem for the related development team probably also would've
+  cost another $1,000,000.00. Meetings, engineering time to "do it right,"
+  revisions and "features" as the software engineers learned more and more
+  requirements over time. (Like the per-service limits, categorizing rules,
+  etc.)
+</p>
+
+<p>
+  From here I have two interesting observations.
+</p>
+
+<p>
+  One observation is that the work would have been seen as a net-zero value in
+  the short term. When an Amazon team is weighing that against some other
+  refund-related feature, like say, actually issuing transactions to banks,
+  it's hard to prioritize reducing the Customer Support costs that other
+  organizations are writing off. It also invites a lot of good-but-tired
+  questions like "Should we really make this faster? Shouldn't we try to address
+  the root causes of why there are so many refunds?" (And of course, the
+  Support organization was beating down a lot of doors to do exactly this.)
+</p>
+
+<p>
+  Another observation is that the savings I generated for AWS with my idea and
+  software during these two weeks was almost double my total compensation for
+  my entire 9 years with Amazon. It's not nearly the most impactful project or
+  valuable work I did for the company, I was there for a long time and have
+  stories. (Especially when I became a core maintainer of the company's shared
+  codebase and the owner of tens of thousands of libraries, not to mention each
+  at multiple versions with decades of cruft and ossification. But, I digress.)
+</p>
+
+<p>
+  I'm very grateful for the opportunity to work on this project and the leads
+  that believed in me at the time and gave me a shot. It's a huge step in my
+  career that soon lead to producing software full-time, first in AWS's
+  Customer Support, then soon after in AWS's Commerce Platform and moved about
+  a bit more, eventually settling in (and helping found) a team called "Code
+  Foundations" and doing that stuff in parentheses from the previous paragraph.
+  The experience was invaluable, so I cannot complain too much, especially at
+  the scale that Amazon (including AWS, Twitch, Kindle, Kuiper, etc) operates.
+</p>
+
+<p>
+  All the same, it's hard after nearly 10 years to reflect on leaving Amazon
+  with zero stake, zero equity, and zero reputation. In 2014 I was making about
+  $36,000 per year, the most I had ever made in my life, and more than I was
+  really prepared to manage. But there were no bonus points when I left. I
+  resigned, so not even severance. My contributions were not always so splashy,
+  but every once in a while I'd do something massive, especially when compared
+  to my compensation.
+</p>
+
+<p>
+  No one was really prepared for a support agent to just start making valuable
+  software, including myself, and it took more than a year and a few more side
+  projects before I was officially allowed to do software full time.
+</p>
+
+<p>
+  To wrap up, I'm a bit disillusioned with large corporations, but that's a
+  post for another day. In short, large corporations are not set up to encourage
+  creativity or initiative. If anything, it gets punished long before it gets
+  rewarded, even with great leaders. WORCH gave me more responsibility
+  immediately. (Update requests, bug fixes, "Can you make ____ next?" etc)
+  There's value in the responsibility, but my peers were answering phones and
+  closing tickets and cases cases and just generally producing metrics that the
+  leadership was prepared care about, and understand, and talk about.
+</p>
+
+<p>
+  I have a lot of fond memories from that Customer Support organization. The
+  people we had were a small, tight-knit team. I'd keep a crowd-funded candy
+  jar stocked up with goodies. One time another guy brought in a griddle on a
+  "bill run" day that happened to be on a weekend. If memory serves right, he
+  made everyone omelettes.
+</p>
+
+<hr>
+
+<p>
+  P.S. After launching the tool, it wasn't <em>entirely</em> smooth sailing.
+  While I eliminated a lot of categories of human error and sped up the process
+  by orders of magnitude, there was a drawback to the speed. I introduced a
+  whole new category of error: the over-refund. When some agent had a typo of
+  $100 when they meant to refund just $10, AWS suddenly had an embarrassing
+  problem to explain, and a technical challenge of figuring out how to re-charge
+  the customer for the erroneous $90 manually and outside of all the fancy
+  world-scale metering and automation.
+</p>
