@@ -1,5 +1,6 @@
 Some articles to write:
 
+* Corporations give Software Engineers really bad incentives
 * Working with others (instead of writing corposoft)
 * Find people that make you feel dumb (how to get smart)
 * Write readable example tests
