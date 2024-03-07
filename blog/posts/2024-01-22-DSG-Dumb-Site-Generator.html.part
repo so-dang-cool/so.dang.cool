@@ -31,6 +31,8 @@
 .
 ├── index.html
 ├── style.css
+├── ...more pages
+├── page-list.html
 └── blog
     ├── 2024-01-01-Some-post-title/index.html
     ├── ...more posts
@@ -45,11 +47,11 @@
 .
 ├── gen.script
 ├── site.html.template
-├── Welcome.index.html.part
+├── Some-page-title.index.html.part
 ├── ...more pages
 ├── style.css
 └── blog
-    ├── 2024-01-01.Some-post-title.html.part
+    ├── 2024-01-01-Some-post-title.html.part
     └── ...more posts
 </pre>
 
@@ -87,18 +89,47 @@
 
 <p>
   If you can't get this done in your language in less than 100 lines of code,
-  something is probably going wrong. Ask somebody for help!
+  something may be going wrong. Ask somebody for help!
 </p>
 
 <p>
-  The posts intentionally bake the date, title, and source format into the
-  filename. The purest form of DSG will use just HTML. The "part" part is
-  short for "partial." Blog post filenames follow this naming format:
+  We'll bake information into the filename that provides both the page titles
+  and destination filenames. The title will come from the first section before
+  a <code>.</code> character, and the destination filename will come from
+  whatever immediately precedes the <code>.html</code> section. (If you choose
+  a different markup language, adjust this accordingly.) We'll always translate
+  dashes to spaces, except when the prefix looks like a date. The date thing
+  sets you up for easy sorting of blog posts based on the prefix.
+</p>
+
+<p>
+  Here are some example filenames (IN) and what they should produce (DEST and
+  TITLE).
 </p>
 
 <pre>
-  {YYYY-MM-DD}-{The-post-title}.{EXT}.part
+  IN:    2024-03-07-My-first-example.latest.html.part
+  TITLE: 2024-03-07 My first example
+  DEST:  latest.html
+
+  IN:    2024-03-07-My-second-example.html.part
+  TITLE: 2024-03-07 My second example
+  DEST:  2024-03-07-my-second-example/index.html
+
+  IN:    My-third-example.i-am-number-3.html.part
+  TITLE: My third example
+  DEST:  i-am-number-3.html
+
+  IN:    My-fourth-example.html.part
+  TITLE: My fourth example
+  DEST:  my-fourth-example/index.html
 </pre>
+
+<p>
+  As we go, we'll either create an <code>index.html</code> file with a list of
+  relative pages, or if an <code>index.html</code> page already exists, we'll
+  create it as <code>page-list.html</code>.
+</p>
 
 <p>
   By default, DSG uses html as the pre-processing markup language. Lots of
@@ -182,6 +213,59 @@
     Awesome DSG
   </a></li>
 </ul>
+
+<hr>
+
+<h2>FAQ</h2>
+
+<h3>How do I get updates over time?</h3>
+
+<p>
+  The DSG is more of a minimalist starting place. DSG is not intended to be a
+  dependency or a framework. Instead, it's intended to be small and simple
+  enough that you can understand it, own it top-to-bottom, and do whatever you
+  want with it.
+</p>
+
+<p>
+  "You're on your own" can be unsettling if you don't have experience with some
+  of the technologies involved, and this is a goal of DSG. When a software
+  owner is merging or responding to updates in a project's dependencies or its
+  framework, the owner gets to have feelings of safety and progress without
+  any incentive to grow skills or understanding. We should still share code and
+  pool resources, but DSG is meant to be a statement and a reminder that these
+  kind of transitive update activities can sometimes be solutions to problems
+  that were completely unnecessary in the first place.
+</p>
+
+<p>
+  DSG templates may be tweaked over time to create a better starting place. Do
+  <em>NOT</em> plan to merge future changes as "updates." Unless you're also
+  trying to make a template for new sites, the goal of your website project
+  should be to be a good website, it should not be a goal to be forever a good
+  starting place. You are encouraged to hack up your site in ways that make it
+  completely incompatible with any changes to a DSG template, it's your site,
+  it's not a template. This is also a reason why DSG templates ship with as few
+  dependencies and as few features as possible.
+</p>
+
+<h3>Why doesn't DSG do <code>$feature</code>?</h3>
+
+<p>
+  Go ahead and do <code>$feature</code> in your site. It sounds like a great idea!
+</p>
+
+<h3>
+  Instead of filenames, why not use a separate configuration file in
+  <code>$configlang</code> for <code>$data</code>?
+</h3>
+
+<p>
+  Go ahead, I've used <code>$configlang</code> too, and it's a great way to
+  declare <code>$data</code>.
+</p>
+
+<hr>
 
 <h2>Updates</h2>
 
