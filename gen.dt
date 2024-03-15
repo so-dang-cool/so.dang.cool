@@ -23,7 +23,7 @@ ls
   [ ".html.part" ends-with? ] filter
   [ \partial:
     partial ".html.part" split first
-    "." split pop \page:
+    "." split pop downcase \page:
     "." join "-" split unwords \title:
     title   partial readf   gen-page
     page "html" push "." join   writef
