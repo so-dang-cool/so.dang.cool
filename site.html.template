@@ -56,9 +56,6 @@
       <center>
         <p>
           2024, J.R. Hill
-          <a href='https://notbyai.fyi'>
-            <img alt='Produced by humans, not by AI' align='right' src='/img/not-by-ai.svg'>
-          </a>
         </p>
         <p>
           <a href='https://so.dang.cool/'>Home</a> |
@@ -69,6 +66,9 @@
           Generated with <a href='https://dt.plumbing'">dt</a>
           (<a href='https://github.com/so-dang-cool/so.dang.cool'>source</a>)
         </em></p>
+        <a href='https://notbyai.fyi'>
+          <img alt='Produced by humans, not by AI' src='/img/not-by-ai.svg'>
+        </a>
         <p>
           <a href='https://github.com/booniepepper'>github</a> |
           <a href='https://gitlab.com/booniepepper'>gitlab</a> |
