@@ -21,12 +21,7 @@ jobs:
       - run: ./gen.dt
       - run: ./gen-feed.dt
         working-directory: 'blog'
-      - uses: peaceiris/actions-mdbook@v1
-      - run: mdbook build -d '../../thinks/'
-        working-directory: './my-books/thinks/'
-      - run: mdbook build -d '../../gigs/'
-        working-directory: './my-books/gigs/'
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v3
         with: { path: '.' }
-      - uses: actions/deploy-pages@v2
+      - uses: actions/deploy-pages@v4
         id: deployment
