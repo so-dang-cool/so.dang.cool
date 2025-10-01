@@ -27,14 +27,7 @@
 
     <div id='strip'>
     <header class='center'>
-      <div>
-        <pre id='sdc'>
-░█▀▀░█▀█░░░░█▀▄░█▀█░█▀█░█▀▀░░░░█▀▀░█▀█░█▀█░█░░
-░▀▀█░█░█░░░░█░█░█▀█░█░█░█░█░░░░█░░░█░█░█░█░█░░
-░▀▀▀░▀▀▀░▀░░▀▀░░▀░▀░▀░▀░▀▀▀░▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀
-        </pre>
-      </div>
-
+      <img alt="so.dang.cool" src="/img/so-dang-cool.png" width="100%">
       <h1>{{ title }}</h1>
     </header>
 
