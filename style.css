@@ -1,7 +1,7 @@
 body {
     color: #ecd;
     background-color: black;
-    background-image: url('/img/watercolor-flowers.png');
+    background-image: url('/img/watercolor-flowers.png'), linear-gradient(342deg, rgba(49, 0, 84, 1) 0%, rgba(255, 133, 133, 1) 40%, rgba(235, 204, 162, 1) 100%);;
     background-size: cover;
     background-attachment: fixed;
     max-width: 50em;
