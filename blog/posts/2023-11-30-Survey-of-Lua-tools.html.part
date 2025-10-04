@@ -18,12 +18,12 @@
   <li><a href='http://lua-users.org/wiki/BinToCee'>bin2c</a></li>
   <li><a href='https://github.com/pocomane/glua'>glua</a></li>
   <li>
-	<a href='https://git.disroot.org/mbo/lesi'>lesi</a>
-	<ul>
-	  <li>Actively developed</li>
-	  <li>Discord <a href='https://discord.gg/7wu7ZsW'>invite</a></li>
-	  <li>Discord <a href='https://discord.com/channels/561645196757041163/1167933889646444675'>channel</a></li>
-	</ul>
+    <a href='https://git.disroot.org/mbo/lesi'>lesi</a>
+    <ul>
+      <li>Actively developed</li>
+      <li>Discord <a href='https://discord.gg/7wu7ZsW'>invite</a></li>
+      <li>Discord <a href='https://discord.com/channels/561645196757041163/1167933889646444675'>channel</a></li>
+    </ul>
   </li>
   <li><a href='https://hg.sr.ht/~cloudninja/ljp'>LuaJit Packer</a></li>
   <li><a href='https://luarocks.org'>LuaRocks</a></li>

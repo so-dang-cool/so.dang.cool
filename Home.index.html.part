@@ -1,28 +1,14 @@
-<p>
-  I'm Justin and I write code, mostly for fun. (<a href='https://justforfunnoreally.dev'>No, really!</a>)
-</p>
+<p>Hello internet, I'm Justin Hill.</p>
 
-<p>
-  My interests and expertise are broad, but have centered around things like
-  software packaging and supply chains, software minimalism, software product
-  and API design, permacomputing, software infrastructure management, and
-  concatenative programming.
-</p>
-
-<p>
-  If you're interested in working with me...
-</p>
-
-<ul>
-  <li><a href='/services'>Services</a></li>
-</ul>
+<p>I'm trying to create and promote cool stuff.</p>
 
 <h2>My Stuff</h2>
 
 <ul>
-  <li><a href='/blog/'>Blog</a></li>
-  <li><a href='/community'>Communities</a></li>
+  <li><a href='/yoto'>Yoto Stuff</a></li>
   <li><a href='/software'>Software</a></li>
+  <li><a href='/community'>Communities</a></li>
+  <li><a href='/blog/'>Blog</a></li>
   <li><a href='/games'>Games</a></li>
   <li><a href='/other-projects'>Other projects</a></li>
   <li><a href='/about-me'>More about me</a></li>

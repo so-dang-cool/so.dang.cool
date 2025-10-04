@@ -134,17 +134,17 @@
   <li>
     LLM-generated code is suitable for mass-production. The <em>production</em>
     of hand-written code does not scale well. (See: Fred Brooks, <em>The
-	Mythical Man Month</em>, chapter 1, and all other chapters)
+    Mythical Man Month</em>, chapter 1, and all other chapters)
   </li>
   <li>
     Just like an IKEA table is easy for a novice to construct, LLM-generated
-	code is easy for a novice to assemble. Woodworking with solid wood requires
-	skills that can only be grown over time with hands-on experience, and the
-	same goes for hand-written code.
+    code is easy for a novice to assemble. Woodworking with solid wood requires
+    skills that can only be grown over time with hands-on experience, and the
+    same goes for hand-written code.
   </li>
   <li>
     LLM-generated code is not suitable for fine craftsmanship. Hand-written
-	code is required for fine craftsmanship.
+    code is required for fine craftsmanship.
   </li>
 </ul>
 

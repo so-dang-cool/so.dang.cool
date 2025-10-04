@@ -34,8 +34,8 @@
   <li>
     Some popular IDE that's standard for the language. Maybe something like
     VS Code <em>(and an electron application can be considered a "light" tool
-	these days!)</em> or a JetBrains IDE, or something that's tightly related to
-	an operating system like Xcode or Visual Studio.
+    these days!)</em> or a JetBrains IDE, or something that's tightly related to
+    an operating system like Xcode or Visual Studio.
   </li>
 </ul>
 
